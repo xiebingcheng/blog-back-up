@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>xiebingcheng的博客(每天进步一点点)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="记录工作生活点点滴滴">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xiebingcheng的博客(每天进步一点点)">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="xiebingcheng的博客(每天进步一点点)">
+<meta property="og:description" content="记录工作生活点点滴滴">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="xiebingcheng的博客(每天进步一点点)">
+<meta name="twitter:description" content="记录工作生活点点滴滴">
+  
+    <link rel="alternative" href="/atom.xml" title="xiebingcheng的博客(每天进步一点点)" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/assets/blogImg/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">xiebingcheng</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">是,我说来不及了,你就可以不努力了吗?</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">xiebingcheng</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/assets/blogImg/head.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">xiebingcheng</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">是,我说来不及了,你就可以不努力了吗?</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        
+  
+    <article id="post-python的库win32的引入失败问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/13/python的库win32的引入失败问题/">python的库win32的引入失败问题</a>
+    </h1>
+  
+
+        <a href="/2017/01/13/python的库win32的引入失败问题/" class="archive-article-date">
+  	<time datetime="2017-01-13T08:43:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-13</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>呜,心累.为了用这个win32库.</p>
+<p>我用这个库,出现了一些问题.</p>
+<p>1.这个库是.exe文件的形式,要安装对号入座的版本,比如你电脑的python是64位 2.7版本的.那这个win32也是要安装64位2.7版本的,我试了好多次,现在这个阶段不能用pip安装win32.</p>
+<p>2.安装完成,版本正确,但是也是不能调用,特别在pyCharm这个编辑器上一直报错,找不到这个文件.</p>
+<p>解决方法是: 是用 .pth 文件来实现。Python 在遍历已知的库文件目录过程中，如果见到一个 .pth 文件，就会将文件中所记录的路径加入到 sys.path 设置中，这样 .pth 文件说指明的库也就可以被 Python 运行环境找到。<br>找到Python安装目录下的site-packages文件夹（$Python/Lib/site-packages）。</p>
+<p>在该目录下创建一个PATH文件（*.pth），例如 MyModule.pth，打开新创建的文件，将你Python源文件所在的目录写入文件中。</p>
+<p>比如我的saySomething.py文件的目录是E:/PythonSpace，PATH文件名为MyModule.pth。所以我的MyModule.pth的文件内容为：E:/PythonSpace。</p>
+<p>除此之外，在高级设置中添加环境变量python/Lib/site-packages之后，重启下pycharm就可以在pycharm中 import win32api 了。</p>
+<p>这些方法来自网络,各个博主的方法.我在把其中的方法提炼出来.在这里要谢谢各位博主帮忙.</p>
+<p>(我用的是建一个.pth文件弄好的,现在pyCharm对于win32库没报错了.)</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/13/python的库win32的引入失败问题/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-重新安装python遇见的坑" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/13/重新安装python遇见的坑/">重新安装python遇见的坑</a>
+    </h1>
+  
+
+        <a href="/2017/01/13/重新安装python遇见的坑/" class="archive-article-date">
+  	<time datetime="2017-01-13T05:01:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-13</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>唉,我今天想要写一个python脚本,这个脚本需要调用Windows系统的aip.需要用到一个库,就是pywin32.<br>然后,踩坑之旅就这样开始了..</p>
+<p>我在下载这个pywin32的时候,发现我那时候下载的python2.7版本是32位操作系统的..我的天.那时候我真的是什么都不懂,乱下载.然后我是新手中的新手,根本用不出来32位和64位的有什么差别.<br>但是这次我要调用系统aip.为了防止以后会有更多的坑,我毅然决然的选择重新安装python2.7版本.</p>
+<p>然后我这次安装的是python2.7.12版本的.结果发现pip不能使用.而且是解决一个坑,又出现第二个坑,就是连环坑等着我去跳.下面我一个一个的说说,防止我以后如果还要重新安装python的时候,又忘记了.</p>
+<p>1.用pip下载库的时候,报错:一段英文,大致意思是,pip的版本过低,比如是8.0.1版本的,他让你升级到9.0.0版本.<br>解决方法是:去到python27的安装目录里,找到这个scripts文件夹,然后shift+右键打开窗口命令.输入指令: easy_install.exe pip==9.0.0(错误提示你升级到哪个版本,你就升级到哪个版本.)</p>
+<p>2.pip下载库,继续报错,如果出现的错误提示英文中有 “error: Microsoft Visual C++ 10.0 is required (Unable to find vcvarsall.bat).” 之类的,而且还给了你一个网站,叫你去那边下载这个缺少的 c++库,你就去下载然后安装就可以了.网站(<a href="https://www.microsoft.com/en-us/download/details.aspx?id=44266" target="_blank" rel="external">https://www.microsoft.com/en-us/download/details.aspx?id=44266</a>)</p>
+<p>3.对了,还有一个我认为也是比较重要的,还是记录一下吧. 在下载python然后安装的时候,对话框如图有这个选项的时候,记得一定要勾选上.pip和Add python.exe to Path ,勾第二个的意思是: 这样就可以不用手动去弄python的环境变量之类的了.<br><img src="http://www.liaoxuefeng.com/files/attachments/0014222393965540081463bf8a9499094bdda24b6fdf2d6000" alt="python安装对话框"></p>
+<hr>
+<p>2017.2.22 更新</p>
+<p>4.我都无语了,今天不注意用360把我电脑上的python2.7删除了,我的电脑有两个版本,3的和2的版本,删除了一个..哭死..<br>然后我下载继续安装,结果怎么都安装不了, 然后我看到对话框的提示,是说<img src="https://pic3.zhimg.com/1f664204b90d921e725dc2cd3ff878e2_b.jpg" alt="提示框"></p>
+<p>说什么有一个东西不能安装,之类的.然后我百度了一下,说的是这样的结果.<br><a href="https://www.zhihu.com/question/30733889" target="_blank" rel="external">知乎的大神说的,安装时选择for me，不是for all users ，（我也没选择安装pip），我的已经成功安装。</a>反正就是安装的第一个选项选择for me ,然后不选择安装pip就行了.<br>但是这样还是出了个问题,就是安装好的python2.7没有pip可以用,这个时候我又去百度了一下,结果有很多,然后我想起了之前第二条要更新pip的事,我就想着用 easy_install来安装pip就好了..结果..<br>不安装pip的下,连easy_install都没有,所以要先下载easy_install先.<br><a href="https://pypi.python.org/pypi/ez_setup" target="_blank" rel="external">下载easy_install的地址</a><br>然后下载 ez_setup.py 到桌面后，按住键盘的 shift 键，右击鼠标，选中“在此处打开命令窗口”，进入 DOS 界面，输入命令：python ez_setup.py 就行了,easy_install安装好后,结合我上次写的第二条就可以安装pip了.(记住,pip最好安装最新版的,要不然python又提示你安装最新的pip了..<a href="https://pypi.python.org/pypi/pip" target="_blank" rel="external">查看最新的pip版本</a>)<br>想来想去,还是在贴一个大神的博文,安装pip的另一种方法吧,以备不时之需.. 这些坑踩到我都怕了,想想看是要换Mac了.. <a href="http://blog.csdn.net/xsj_blog/article/details/52037609" target="_blank" rel="external">http://blog.csdn.net/xsj_blog/article/details/52037609</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/13/重新安装python遇见的坑/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-关于时间管理的方法-get" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/02/关于时间管理的方法-get/">关于时间管理的方法(get)</a>
+    </h1>
+  
+
+        <a href="/2017/01/02/关于时间管理的方法-get/" class="archive-article-date">
+  	<time datetime="2017-01-02T02:40:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-02</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这两天,看到万维钢最近写了篇文章.介绍了数学家研究关于时间管理的相关成果.</p>
+<p>得出了两个消息.一个坏消息,一个好消息.</p>
+<p>坏消息:并不存在适用所有情况的最好的时间管理方法.</p>
+<p>好消息:如果给这些方法增加一些使用条件,就是设定一些条件,那么可以用数学证明,找到适合这类情况的最好的时间管理方法.</p>
+<p>先来说说，如果你面临的是这样的情况，你有几个任务，所有的任务都是急事，也就是说，每个任务都有完成截止日期，那么数学家的建议是什么呢？</p>
+<p>第一个办法就是按照截止日期的早晚来安排任务，先做最早截止的任务，做完一个再做下一个。这样做可能每个任务都会拖延一点，但是都不会拖得太久。</p>
+<p>不过，按照这种做法，有的任务还是会完不成，但是我们希望按时完成的任务越多越好，那怎么办呢？这时候就要采取另一种方法，叫“摩尔算法”，就是放弃占用时间最长的任务。</p>
+<p>举个例子，冰箱里有很多水果，都有自己的保质期，为了尽可能地减少浪费，你应该先吃最早过期的那个。当你发现自己肯定吃不完的时候，就应该把剩下的水果中最大的那个扔掉，因为吃掉它最费时间。也就是说，不管西瓜还有几天过期，你都应该把西瓜扔了，继续按照到期的先后顺序来吃剩下的水果。</p>
+<p>再来说说，如果你面临的是这样的情况，你手头有一些任务，每一个任务的截止日期都比较宽裕，都不是急事，那么哪种方法最好？</p>
+<p>处理不是急事，你可以用“小事优先”方法，就是优先做那些时间更短的事。</p>
+<p>一项任务涉及到别人的等待时间，可以用这个方法。举个例子，有两个人都要跟你谈话，一个要谈3分钟，一个要谈10分钟。如果先跟3分钟的人谈，另外一个人就要等3分钟，那么占用的总时间是3+3+10=16分钟。如果先跟10分钟的人谈，另一个人要等10分钟，占用的总时间是10+10+3=23分钟。所以先跟3分钟的人谈话更省时间。</p>
+<p>如果没有人在等，我们也应该小事优先，因为心里一直被任务压着，每完成一个小任务，就能减轻一点心理负担。</p>
+<p>以上说了两种情况，适用的范围其实不多，因为你经常面临的是这样的情况，你手头有一些任务，虽然截止日期比较宽裕，但是每件事的重要程度并不一样。这个时候用什么方法最好呢？</p>
+<p>数学家说，此时的原则是“任务密度高者优先”。就是说，要计算每一个任务的密度，按照密度从高到低的顺序去做。如何计算任务密度呢？就是任务的重要程度，除以完成时间。</p>
+<p>那么如何确定任务的重要程度呢？</p>
+<p>这里没有统一的作法，但是重要的是理解，这里的关键在于这个量化的思想。不能光说要事优先，到底多重要的事才算要事呢？这个方法就是把事情的重要程度用数字表现出来，帮助你判断。</p>
+<p>作者也举了一个例子，说明可以简单地估算任务的重要程度，就是估算每一个任务完成后的收入。这样就可以方便地计算任务密度了。</p>
+<p>比如有两项任务，A任务收入200元，1小时完成；B任务收入300元，3小时完成。用任务的收入除以完成时间，A任务的密度是200，B任务的密度是100。所以，虽然B任务收入更多，也要排在A任务的后边。</p>
+<p>说到这里，你可能会问，那些不能折算成收入的任务怎么办，怎么去估算这些任务的密度呢？你可以用自己的标准去给每一个任务设定一个值，让这些任务的重要性可以比较就可以。记住，关键在于这个量化的思想，把任务的重要性可以用数值的方式表示出来。</p>
+<p>最后，我们来说一个最复杂的情况，就是你要同时考虑的方面很多，比如，既要考虑不同任务的截止日期，每个任务的重要程度也不同，而且，任务之间可能还是有联系的，必须完成A任务，才能继续做B任务。这种情况怎么办？数学家说，这种情况没有一个最优解。</p>
+<p>但是数学家说，只要改一个小条件，就会有一个好办法，这个小条件是可以允许任务中断的。</p>
+<p>举个例子，就是你正在做一件事的时候，来了新的任务。此时，你应该继续做原来的任务呢，还是去做新的任务呢？这个问题是有解决办法的。你可以比较一下新任务和手里任务的截止时间，哪个先截止就做哪个。你还可以比较一下新任务和手里任务的密度，哪个密度更高就先做哪个。</p>
+<p>最后总结一下，数学家说，时间管理没有一个放之四海而皆准的好办法。但是，如果设定一些条件，也就是说，如果可以简化到某一种情况，数学家就能告诉你这种情况下的最好办法。</p>
+<p>所以，最重要的，是你要知道，每一种时间管理的方法其实都是有适用条件的。</p>
+<blockquote>
+<p>看完这篇文章,我记得我以前做事效率非常的差,不知道把西瓜丢掉. 硬的头皮去啃完西瓜,结果是什么?西瓜虽然啃完了,但是其他的也吃不到了..(做不完了..)</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/get/">get</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/02/关于时间管理的方法-get/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-如何品葡萄酒2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/31/如何品葡萄酒2/">葡萄酒(酒杯的学问)</a>
+    </h1>
+  
+
+        <a href="/2016/12/31/如何品葡萄酒2/" class="archive-article-date">
+  	<time datetime="2016-12-31T11:43:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-31</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>上次说到,葡萄酒的酒瓶的不同,里面装的酒也是不一样的.基本上看瓶子可以猜里面的酒的种类.</p>
+<p>为了在即将到来的新年宴会上装逼,我有收集了一些关于葡萄酒的知识,这里主要讲的是–酒杯..</p>
+<p>喝葡萄酒都用高脚杯,这已经是常识了.但是其实高脚杯也有很大的不同,记得在电影或者电视剧里面,经常看到大伙在庆功宴上,开香槟庆祝,然后香槟倒在一摞叠起来的高脚杯上的场景吗? 这里的高脚杯就和我们平时用的高脚杯样子又有很大的不同.(大家可以回想回想那种杯子的样子.这里我卖个关子)</p>
+<p>高脚杯有大小和形状之分.</p>
+<p>如果和红酒,正常情况会使用那种比较常见的高脚杯,就是杯的 肚子 比较大,上面稍微收口的酒杯.因为样子像郁金香的花苞,所以又称大郁金香型.<br><img src="http://hiphotos.baidu.com/exp/pic/item/a992e31f4134970a74f8774594cad1c8a6865d95.jpg" alt="郁金香型高脚杯"></p>
+<p>喝红酒,一般要等到它的味道蒸出来,一边闻,一边喝.因此,酒杯的容积要大,然后杯口要收缩一点,因为为了帮助酒挥发,我们手要不断的转动北京,杯口略小,就是为了不要转动的时候酒流出来.<br>喝酒的时候,一般先给主人倒上,然后主人小口尝试一下,得到主人的认可后,才会给每一个人倒上.</p>
+<p>红酒一般每次倒上4-6盎司,大约120-180毫升,占杯子容积的一小半.喝的时候要小口慢慢喝,不要一下子就”干了”.好的[葡萄酒在杯子上会出现挂杯的现象,而且挂杯的痕迹是油状的,比较厚实.差的酒留下的是水状的.</p>
+<p>还有一点,喝红酒要配红肉,就是猪肉牛肉羊肉,因为红肉油脂丰富,而红酒则是酸性的,里面有醋酸,然后醋酸和红酒配合会发生化学反应,生成乙酸乙酯.这个乙酸乙酯的香味就是我们天然美食的香味.</p>
+<p>和白葡萄酒.一般用容积小的杯子,杯子的形状如图.<br><img src="http://hiphotos.baidu.com/exp/pic/item/ca5257540923dd546608c102d009b3de9c824825.jpg" alt="白葡萄酒杯">  </p>
+<p>为什么要用小杯和白葡萄酒呢? 因为白葡萄酒一般需要低温饮用.一般在0到10度之间的温度. 所以如果杯子大,一般没喝完就温度上去了.味道就差了很多.和白葡萄酒不要晃杯子.和红酒不太一样.</p>
+<p>喝白葡萄酒要配白肉,就是什么鱼肉海鲜鸡肉之类的,为什么呢?<br>因为白肉大都比较鲜.白葡萄酒刚好可以用清醇的味道,点缀一下白肉的鲜.</p>
+<p>接下来,是香槟,前面我说到了电影里面的情节,庆祝的时候喜欢用香槟,把香槟酒倒在摞好的酒杯上,从上往下倒.这种杯子的口比较大,是为了让气泡冒出来,增加庆祝的气氛.<br><img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=def892e09c82d158bb825eb7b8317ee5/f603918fa0ec08fa5ecc07a959ee3d6d54fbdaeb.jpg" alt="大口的香槟杯"></p>
+<p>还有一种香槟杯子,是一种非常细长的,开口很小的杯子.这种杯子这样设计的目的就是为了不让香槟酒的气泡这么快的消失,可以一边喝一边体会,这种杯子一版在用正餐时使用.<br><img src="http://hiphotos.baidu.com/exp/pic/item/5202e5f2b2119313433299da64380cd791238d2c.jpg" alt="小口香槟杯"></p>
+<p>好啦,酒杯我就先记录到这里.下次有要补充的再继续补充.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/美酒/">美酒</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/31/如何品葡萄酒2/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-什么叫牛人" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/24/什么叫牛人/">什么叫牛人?</a>
+    </h1>
+  
+
+        <a href="/2016/12/24/什么叫牛人/" class="archive-article-date">
+  	<time datetime="2016-12-24T14:57:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-24</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>什么叫牛人?</p>
+<p>1.自己定义目标,并且想办法勇于善于把它完成(能不能自己定义问题,并想办法解决掉).  (扎里伯格)</p>
+<p>2.在行动的过程中,让更多的人能够帮助你. (能和其他人交流的界面和方法.)</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/定义/">定义</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/24/什么叫牛人/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-关于以色列建国的感悟" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/24/关于以色列建国的感悟/">关于以色列建国的感悟</a>
+    </h1>
+  
+
+        <a href="/2016/12/24/关于以色列建国的感悟/" class="archive-article-date">
+  	<time datetime="2016-12-23T16:04:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-24</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前学历史的时候,我记得在二战的时候,中国政府在上海收留和帮助了很多的犹太人,然后战争结束犹太人很感激,据说后来中国的歼十战机师承以色列的幼狮战机,有很多幼狮战机的技术在里面.</p>
+<p>另一头我又听历史老师讲,以色列和巴勒斯坦一直在打仗,那个地方很不和平,以色列犹太人说这个地方以前是他们的,巴勒斯坦也说我们祖祖辈辈都生活在这里,这个地方是我们的.</p>
+<p>然后,印象中好像中东地区一直都是阿拉伯人的,祖祖辈辈都生活在那里.<br>顿时,一个可怕的”担忧”,浮现在我脑海,如果那个时候,二战中国政府收留的犹太人,过后说上海是他们的怎么办?</p>
+<p>但是转念一想,犹太人其实挺好的,最少他们懂得感恩,在西方世界关于这些武器等技术限制对华出口,但是犹太人还是帮了我们. 所以我知道,我刚刚的担忧是有点杞人忧天的了.</p>
+<p>但是,怎么想都感觉不太对,关于这些,有些东西感觉在我脑袋里扣不成一条完整的绳子.比如,为什么巴勒斯坦和以色列都说这个地方是他们的?这个地方沙漠一片片的,以色列人还花了这么多钱和精力去治理这些沙漠,而且犹太人也是一个很会经商的民族,周围这么多和他们犹太人不和的民族在旁边,这个再怎么算,都是赔本的买卖,以色列人不会不知道,但是他们为什么还当宝,还要坚守在这?</p>
+<p>然后这段时间,了解了一下这段关于犹太人的历史,不了解不知道,一了解吓一跳,让我更加佩服!</p>
+<p>犹太人说这块地方原来是他们的,确实是,公元135年之前,他们一直在这里生活,然后古罗马的皇帝哈德良,把犹太人赶走,还规定,犹太人永远不能回来或者接近这里,接近就是死刑,而且还给这片地方改名,叫做巴勒斯坦,据说这是犹太人死敌非利士人的拉丁文中的同音.就是在拉丁文中非利士人和巴勒斯坦是同音.<br>而且在这公元135年之前,被赶走了两次,犹太人都又跑回来复国了,只是这次时间久了点,从被赶走到现在复国隔了近两千年.</p>
+<p>隔了进两千年,还能复国!?  这什么概念?</p>
+<p>而且犹太人在我的印象中是非常牛的一个民族,别的不说太多,光爱因斯坦是犹太人,都可以证明他们的牛.但是这个民族也是一个很惨的民族,二战被德国差点灭族不说,其实我看到有关资料,他们在公元135年被赶出自己的地盘来,就命运非常的惨,去到欧洲各国,都是被压迫,被压榨.我还记得,犹太人惨到什么地步,在中央电视台看过一档节目说的是二战的时候,德国纳粹迫害犹太人后,把他们的人皮,做成台灯和书皮.惨到这样的地步..</p>
+<p>而且还有一个阻力,他们想复国的地方,有一座城市,耶路撒冷,是三大教的圣城,犹太人离开的这段时间.两大教已经打的不可开交了,现在一个被欺负了千年的民族想回来这个地方建国?不仅在当时,到现在也是感觉是一件不可思议的事.<br>而且居然还真给犹太人做到了..真是厉害!</p>
+<p>不过我感觉我前面说了好多的废话,好吧,那直接进入正题,以色列建国的感悟,要说到感悟,要得先了解犹太人是怎么建国的,才能会有感悟.</p>
+<p>据资料记载,最先提出犹太人建国主义理论的是一个叫 摩西’赫斯,据说这个人还是共产主义的先驱比马克思,恩格斯还要先.但是这个人对关于犹太人复国只是提出一个理论,真正实施的是一个叫赫茨尔的犹太人,他是个很有执行力,马上就去做了.<br>赫茨尔先找到当时犹太人中富可敌国的而且又很有民族感的犹太人,找了其中两位,但是,那两位都觉得这些都不太可能实现,首先当时的巴勒斯坦在奥斯曼土耳其帝国的手里,那可是一个主权国家,当时犹太人只是有钱,但是没有军队,怎么和奥斯曼拿这片地方?其次,就算奥斯曼同意分巴勒斯坦给犹太人的话,要建立一个国家,也是需要很多钱的,虽然犹太人有一部分确实很有钱,但是对于建立一个国家来讲,那些钱几乎微不足道.为什么,就像当时赫茨尔像富豪提出的建国预算大概是十亿马克!这是什么概念,在当时的经济情况下,第二次提出六千万美金,依然还是拿不出来.<br>到了这里,赫茨尔知道,找富豪是不太可能完成这项任务的了,他直接跑去和当时的列强英国说,英国也很为难,说巴勒斯坦不在英国人的手里,怎么帮他们?要不找其他的地方?然后赫茨尔想了想,确实也是,这个道理,然后提出了,什么塞浦路斯,西奈半岛,乌干达,甚至当时的日本侵略我们东北,还说干脆划分哈尔滨附近的一片地方给犹太人建国算了(这样也想的出来..)然后,犹太人专门开了一个会议,专门讨论复国的事,当把这些提议去乌干达的建国的想法提出来时(当时他和英国人讨论了好久,干脆去乌干达算了.),遭到了大会的极高票反对,甚至说派一个考察团去乌干达看看也是高票反对不通过.大会上的犹太人说,要复国就去老祖宗留下来的巴勒斯坦那里复国. 这下英国人说,帮不了他们了巴勒斯坦又不在他们的管辖下,给他们出了这么多方案又没人通过.英国人说不管了.没办法,赫茨尔因此去找了德国人,德国人当时刚刚上台的皇帝叫威廉二世.威廉二世本来是答应了,为犹太人出头,然后他上台的第二年就出访奥斯曼土耳其,结果看到奥斯曼这个国家也不错,为什么要和他们交恶?接下来,在奥斯曼土耳其访问中,做了很多友好的动作.赫茨尔一看完蛋了.德国这边也没希望了.赫茨尔这一代犹太人的希望基本没了,因为该找该求的人都求遍了,有钱,有势的都不帮忙.最后赫茨尔死于1904年,这可以分为犹太人复国的第一阶段的结束.</p>
+<p>第二阶段的犹太人复国,交到了一个名字叫魏茨曼的犹太人的手中.为什么交给他,因为他是一名化学高手,当时正在打仗,第一次世界大战,火药是战争的必需品,然后当时火药的生产需要一个叫丙酮的东西,可是在魏茨曼之前,生产丙酮的工艺很差,然后魏茨曼发明了一种方法可以快速大量安全有效的生产丙酮,这就帮了英国的大忙,因为在打仗.然后可以说是,魏茨曼和英国人做交换,我把这些技术给你们,你们支持我们犹太人去复国.然后英国人说,没问题,紧接着以私人信件的形式发表了,一个叫’贝尔福宣言’.表达了在不损害当地人的利益的情况下,支持犹太人去那里建国.<br>虽然是私人信件的形式发表的,但是也终于有一个国际大国愿意支持犹太人复国了.<br>大家可能会想,一个小小的丙酮这么厉害,可以和别人换来一个国家..<br>其实,也根本不太可能嘛,别人怎么可能会因为这么一个配方给你一个国家来交换?毕竟复国这是非常大的事.<br>在网上看到,有评论说是因为,当时奥斯曼土耳其加入了德国的阵营在第一次世界大战中,然后英国是对德国宣战的,所以属于敌对国,既然是这样,英国人帮犹太人支持他们去这个奥斯曼土耳其的地方建国,当然是随便的事,因为这个不是他们的地方,而是敌对国的地方,你随便去.<br>但是也是巧合吧,历史总是会这样,一战奥斯曼土耳其战败,结果巴勒斯坦给英国人暂管.犹太人因为有之前的’贝尔福宣言’,看到了希望,开始大批大批的移民来到巴勒斯坦,然后,在当地的阿拉伯人很看不惯犹太人,因为犹太人聪明而且有钱,很快阿拉伯人就和他们闹矛盾.搞得英国焦头烂额,后悔死了,放犹太人过来,然后犹太人,又恨英国人放的犹太人不够多,又和英国搞破坏.<br>然后,这时的英国已经里外不是人了,因为犹太人恨他,阿拉伯人也讨厌英国人为什么放这些犹太人过来这里. 这时候的犹太人,还没说成功的复国了.以色列真正成立是在二战结束的时候,成立.</p>
+<p>那么为什么,到了二战以色列就能成立了呢?</p>
+<p>这是因为当时,二战的时候,美国在一战发了战争财,成为一个新崛起的大国,苏联也是另一个大国,不是英国一家说的算了.所有,犹太人建国,还得让这两大国支持才行.</p>
+<p>话分两头说,先说美国为什么支持犹太人复国,首先,美国的社会名流中,很多都是犹太人.这是第一点,然后还有一个事件.叫做 “圣路易斯号事件”,当时很多受德国纳粹迫害的犹太人乘坐圣路易斯号轮船要强行登陆美国,然后美国海关不给,说没合法手续,不允许,叫他们全部返航,结果没办法,这首轮船返航的途中,被德国潜艇炸沉.结果这事在美国引起了轩然大波,很多在美国的犹太人的民族情绪被点燃,然后随着杜鲁门总统上台,美国明确支持犹太人复国. </p>
+<p>然后,苏联,苏联前身是沙皇俄国,当时的俄国也是迫害犹太人比较厉害的一个国家.然后苏联建立,苏共的第一届政治局,一共24个人,其中16个是犹太人.但是后面各种原因,斯大林肃清犹太人,所以苏联又走上了反对犹太人的道路.但是打完仗了,苏联觉得中东是他们的后院,现在有他们讨厌的英国人在那里,很不舒服,一看阿拉伯人是没有实力和英国人捣乱,但是犹太人是有这个实力,这是一点,第二点,前面我写到,共产主义犹太人甚至还是先驱,有很多犹太人受过共产主义的熏陶,苏联觉得会不会犹太人自己建国了,会建立一个共产主义的国家?和他们苏联意识形态一样,或者说相近?所以在1947年苏联人发表了演说,支持犹太人建国.</p>
+<p>这时候,美国和苏联都搞定了,然后英国一看这两个大国都支持了,而且英国在这里被阿拉伯人和犹太人捣乱搞得很心烦,英国人也是不会做这样赔本的买卖.所以英国人就撤了.<br>紧接着,联合国大会通过决议,宣布巴勒斯坦分成两个国家,一个是阿拉伯人建立的国家,另一个是犹太人建立的国家–以色列.</p>
+<p>到这里,以色列建国的曲折故事,差不多就简单的交代完了.</p>
+<p>写到这里,这个故事给了我许多的感悟.</p>
+<blockquote>
+<p>1.万事还是得靠自身,看犹太人复国可以分为两个阶段,第一段,犹太人基本上是靠说服,或者请求帮助,或者是交换的方式,来获得一个国家.这怎么可能嘛? 世界上哪里有这么多的良心? 你说你很惨,受尽其他民族压迫,然后被赶走故土这么多年,想回来复国.确实是很惨,但是世界上也有其他民族也是这样惨的,为什么他们就没能复国了?<br>犹太人复国,看似好像世界各国的人民同情他们的遭遇,然后帮助他们,其实哪里是这个道理.犹太人没有这么出色,没有在苏联成立时,24个骨干成员,16个是犹太人,没有在美国社会上流这么多的犹太人,没有化学高手–魏茨曼,没有物理高手–爱因斯坦等等,这些牛人,能成功吗?犹太人虽然受尽迫害,但是他们依然顽强不息,依然能为人类的发展提供这么多的牛人和科学技术资料.他们犹太人民族虽然历尽苦难,但是从来没有被击垮.所以,不是犹太人取得了全世界人民的同情,相反,他们是取得了全世界人民的尊重.</p>
+<p>2.犹太人一直很坚定的相信他们一定能在巴勒斯坦这个地方复国,为什么?因为之前在公元135年之前他们也被赶出去,但是又回来复国,一共有两次.所以他们脑袋记忆深处一定相信,他们这次复国一定能成功.<br>这也让我想到了,我们中国,以前也很牛,唐朝,世界各地有唐人街,我也一直相信我们会复兴,再一次成为世界超级强国,我也有个愿望,我老司机一名,看到意大利是超跑故乡,而咱们中国在超跑这方面基本是0,我也想着把中国建设成一个世界一流电动超跑的故乡!我为什么相信我们能成功?因为我们之前在很多领域也是世界一流,所以我记忆深处也是有那种记忆,相信我们会做到.</p>
+<p>3.这点网上分析的,我觉得挺有道理.说的是,犹太人复国成功为什么? 其中有一点,成为他人的棋子,方可安身立命. 为什么这么说, 你看苏联本来是反对犹太人的,斯大林一生对犹太人都没什么好脸色.但是后面为什么支持? 其实可以从这个角度去说,当时英国在中东,苏联觉得很不舒服,然后只能靠犹太人去和英国捣乱,还有说不定犹太人建立的国家是共产主义的国家,说不定苏联又有了一个盟友,何乐而不为?其实美国也是,美国到现在都支持以色列.其中以色列这一独特的地缘位置,这一条特点,也是美国人支持以色列的一个原因.其实说白了,以色列如果不能主动的给大国博弈当他们的棋子,怎么能安身立命?毕竟犹太人一开始在复国这件事上可以算是一穷二白的地步..<br>我想了想,确实,拿这条道理在现实生活中,其实也一样受用,为什么这么说,其实打个不恰当的比喻,其实很多创业者就是其他人手中的棋子,对于投资人来说,你是他们赚钱的棋子,我把你这个棋子放在这个位置,这招虽然兵行险着,但是如果他搏对了这次走的棋,他的收获的利益可不是用手指头可以算的完的.在拿消费者来说,消费者也在把创业者当做棋子,为什么这么说.比如有两个类似的产品,消费者比对之后,决定用他不用你,等于把你这个棋子丢弃,保护另一个棋子.再比如拿支付宝来说,用户把支付宝当成一个棋子,当成了钱包,需要用钱的时候,才想到支付宝.其实支付宝不就等于是一个棋子了吗.话说到这里,其实反过来也一样,创业者一样把投资人和消费者当成了他们的手中的棋子.<br>慢慢想想,其实在人际关系中,不也是这样,互相把对方当成棋子.为什么?其实这是人性,这是人最原始的需求罢了.</p>
+<p>其实,关于这感悟还有一点,就是运气.如果犹太人没有赶在这一战和二战这段时间复国,在世界一篇和平.或者奥斯曼帝国很强大,和当时的英国一样,你想可能会复国成功吗? 这里面有很多的偶然因素.<br>不过,也不是这么悲观,假设当时的世界真的如我们假设是另一番景象,如果犹太人还是想着复国,一定还有另外的方法和机会等待他们,只是看他们能不能探索发现出来这些方法和机会.<br>就像易经里面说的.世界万物都是在变动的.阴和阳本身就是在运动的.那我们怎么办? 中国人有一个智慧,叫做以不变应万变.(这句话的意思,不是它字面上的意思.)其实,邓小平同志,把这句话进一步的封装了一下,叫做,摸着石头过河.  这个中国人的大智慧,实在是太好用了..</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/一些感悟/">一些感悟</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/24/关于以色列建国的感悟/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-如何品葡萄酒1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/23/如何品葡萄酒1/">葡萄酒(酒瓶的奥秘)</a>
+    </h1>
+  
+
+        <a href="/2016/12/23/如何品葡萄酒1/" class="archive-article-date">
+  	<time datetime="2016-12-23T13:16:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-23</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很快,新历的2016年就要过去,农历新年也快要到来,接着估计年会,各种聚会就要来了..然后要各种喝酒,这样有点气氛.. </p>
+<p>我还是现在收集一些葡萄酒的知识吧(比较不喜欢白酒),看看聚会的时候能不能靠这些知识装一下逼.. 哈哈..</p>
+<p>葡萄酒的种类非常多,除了我们平时见到的红葡萄酒.白葡萄酒外,其实香槟.波特酒还有什么冰酒等甜点酒都是葡萄酒(其实,白兰地也是一种特殊的葡萄酒).</p>
+<p>世界各地不同地方虽然生产的葡萄酒各种各样,但是同一类的葡萄酒一般用一类形状的瓶子装,所以看到瓶子,可以知道里面装什么酒了.</p>
+<p>最常见的酒瓶是波尔多的.波尔多是法国最好的葡萄酒产区,什么拉菲.木桐等天价酒都出自这里.波尔多在红酒代表一类酒,瓶子有点像中国的酱油瓶,在法国只有这个地方产的酒能用这样的瓶子装酒.<br><img src="http://p5.yokacdn.com/pic/life/foods/2014/U404P1T1D927498F62DT20140528165947.jpg" alt="波尔多酒瓶子"></p>
+<p>在美国纳帕和西班牙等地,也生产类似波尔多酒的混酒,酒瓶上面的颈和波尔多的一样,但是为了和波尔多的酒区别,瓶子做得略微有点斜,瓶身上面略大,下面略小.<br><img src="https://cbu01.alicdn.com/img/ibank/2015/577/304/2187403775_1746802266.400x400.jpg" alt="纳帕混酒的瓶子"></p>
+<p>在法国名次仅小于波尔多的产地是勃艮(gen)第,它的瓶子是瓶颈上端呈现流线型的直身瓶子.<br><img src="http://n.sinaimg.cn/transform/20141224/awzunex8383856.jpg" alt="勃艮第酒瓶子(第一个)"></p>
+<p>法国另一大葡萄酒产区是罗纳河谷,瓶子虽然也是流线型直身的,但是比勃艮第的矮粗很多,因此不会搞混的.(上图第二个瓶子)</p>
+<p>还有.刚刚说到香槟也是一种葡萄酒.香槟在世界上只有法国香槟产区产出的发泡白葡萄酒才是允许称为香槟酒.<br>香槟酒的瓶子矮胖.瓶颈和瓶身的过渡期比较圆滑.他的最大的特点是瓶塞处,由于瓶中有气压,因此瓶塞使用铁丝拧死.所以,为什么开香槟的场面这么欢乐.就是来自这里了.</p>
+<p>还有哦,酒瓶的底部凹进去一块,是为了在酒瓶直立时能沉淀出酒渣,酒保存时间长了,会出现渣子.所以在开瓶之前要把酒瓶放一会沉淀一下渣子再倒酒.</p>
+<p>所以,一般来讲,酒瓶凹进去越深,说明酒需要陈化的时间越长,一般越是浓的,好酒才需要陈化的时间长,所以它们瓶子的凹陷就越深. 所以我们如果新手(说的是我)最简单判断好坏酒的质量的方法就是用手摸摸瓶底的凹陷.虽然有例外,但是八成酒都可以这样子判断好坏.</p>
+<p>嗯嗯嗯..(在憧憬的样子)..</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/美酒/">美酒</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/23/如何品葡萄酒1/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-分享-杨洋关于人工智能的讲话" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/15/分享-杨洋关于人工智能的讲话/">分享,杨洋关于人工智能的讲话</a>
+    </h1>
+  
+
+        <a href="/2016/12/15/分享-杨洋关于人工智能的讲话/" class="archive-article-date">
+  	<time datetime="2016-12-15T14:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-15</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天,看到人工智能技术公司IPIN的首席执行官杨洋的关于人工智能的分享,我现在来摘下来,供日后查阅.</p>
+<p>演讲中，他一共谈到了两个内容，一是科技创新，二是人工智能。</p>
+<p>首先，杨洋认为科技创新是一门科学。为什么有的企业科技创新质量高，有的却很低？这背后是有迹可循的。他提出创新的关键在于生产高质量的点子，以及筛选这些点子的过程。</p>
+<p>产生点子的方式主要有三种，一是用户主导式创新，鼓励用户提供建议、点子。比如戴尔，专门建了一个Idea Storm网站，鼓励用户提供点子，一经采纳会给予奖励。第二种是从竞争对手那获取点子，最典型的是腾讯。第三种是利用外部资源寻找点子。</p>
+<p>杨洋还谈到了怎么筛选这些点子。第一，要考虑点子是否适合公司。第二，要战略性选取点子。从潜在能力、科学性、未来的盈利回报等各个维度，进行筛选。从而控制风险，获得最大投资回报率。</p>
+<p>在战略选点上，他建议中国科技企业要尽量避开BAT的核心业务。不然容易被巨头打死。人工智能领域也是这样，要避开BAT选择的方向。</p>
+<p>杨洋以人工智能从业者的角度，讲述了人工智能的发展情况、领域运用、以及人们对人工智能认知的误区。</p>
+<p>首先，他认为人工智能市场庞大。麦肯锡在2013年发了一份报告，列出了未来具有颠覆性的十二大技术，涵盖了移动互联网、知识工作自动化、先进机器人和自动汽车。这些都属于人工智能领域。</p>
+<p>第二，他提出人工智能其实不是一项技术，而是N多技术。举个例子，我们人类是怎么做事的呢？感知信息、认知、理解信息、分析、找出额外信息、再做决策。这是人类对于信息的处理过程，人工智能也同样如此。</p>
+<p>第三，为什么人工智能在2016年爆发了呢？杨洋认为，云计算普及、计算能力突破、互联网大数据以及深度学习技术的成熟，这四点碰撞在一起，造成了人工智能大热。</p>
+<p>第四，关于人工智能的方向。主要有三个：一是声音。声音有很多细分领域，各有各的特色。第二个方向是图像。第三个方向是对自然语言的理解，全世界没多少公司在这块取得过成功。</p>
+<p>杨洋说，让机器人理解文本是非常难的。声音、图像都可以转换成数字，但理解自然语言，就非常困难。比如说，“华为很棒”，“华为”这两个字你让机器怎么去理解呢？人工智能卡在了文本理解这块。那要怎么做呢？杨洋说，首先要给所有的文字建模，打好了基础，才能做到理解。</p>
+<p>第五点，未来人工智能领域将颠覆教育、医疗保健、法律、金融等行业。现在，这些传统行业已经开始让人工智能介入了。比如说金融业，两个机器人使用相同的算法和信息源，预计股票的涨幅。这就使原本需要5-6个小时的涨幅时间，缩短到了2-3分钟，股市原本是为了高效利用资金，如果人工智能可以在这么短的时间里，就做到对资金的高效配置和利用，那股市就没有存在的意义了。所以有学者就认为，AI可能会导致股市改革。</p>
+<p>有人认为，人工智能的一个局限在于没创意。可杨洋却说：机器人比人的创意要高很多，创意在数学上的表达是随机数。人往往因为经验，有思维定式，但是机器人是不存在这种定式的。所以机器人的创意反而比人要多得多。</p>
+<p>那么人工智能现在真正的局限在哪呢？杨洋说，逻辑是人工智能的天花板。机器人可以写新闻，但写不了动人的小说。因为机器人没有强大的逻辑，没办法写出动人的情节。人的逻辑是百分之九十几，但是现在机器人的世界纪录，英文逻辑才达到百分之七十多，中文还要更低一点。</p>
+<p>最后杨洋提到，未来几年人工智能会比较普及。各个行业要做的是，洞悉行业的各种生态链，了解哪个环节是人工智能能介入的。用互联网+的角度，去看待AI+。但要记住，它的速度一定比互联网+猛得多。</p>
+<blockquote>
+<p>以下是我的一些看法.我觉得杨洋先生说的没错,首先先说他觉得中国科技企业要避免BAT的核心业务,不然容易被巨头打死. </p>
+<p>那时候,万达联合百度想弄一个电商平台,结果倒闭了,百度撤资, 为什么?不想想阿里在电商混了这么多年,不是白混的,他的经验,足以弄死你.</p>
+<p>第二,人工智能确实不是一项技术,而是N多技术的集合.而我认为,以后,不仅仅只是科学家懂人工智能,人工智能会像现在的英语一样,成为以后人们的一项技能,在200几年的时候,我记得好像还有专门招英语好的人作为一个职位任职,现在呢?<br>我的设想,以后一名好的律师,医生,会计师等等,都要会写人工智能才能行,比如医生,他在医学领域有建树,然后会人工智能,写出的关于医学的人工智能,或许比我们不会医学的人写出的人工智能会更好用一些.人工智能在以后会像是英语一样,在各行各业都会需要,并且广泛应用.</p>
+<p>关于杨洋说的最后一点我是很认同的,它的速度一定比互联网＋猛得多,而且也快的多的多.</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/人工智能/">人工智能</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/15/分享-杨洋关于人工智能的讲话/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-解决反复纠结3方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/14/解决反复纠结3方法/">解决反复纠结3方法</a>
+    </h1>
+  
+
+        <a href="/2016/12/14/解决反复纠结3方法/" class="archive-article-date">
+  	<time datetime="2016-12-14T14:20:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-14</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>纠结,我常常犯得事.有时候真的非常的纠结,不知道怎么弄.这样真的很浪费时间.而且有时候心情也被破坏了.今天,看到三个解决反复纠结的方法,我把它记下来.</p>
+<p>首先作者说,人之所以会纠结,是因为选择本身对我们就是个负担。每个人都想追求完美，还担心选错了受到损失。如果有一次选择结果没达到预期，就会觉得自己傻，应该选另外一项。这样下次做选择的时候，会更要求完美，更害怕选错，就会更纠结。这样就陷入了一个恶性循环。</p>
+<p>尤其是选项越多,我们就会因为害怕选错而干脆不选.就像之前做个的一个很经典的果酱实验.</p>
+<blockquote>
+<p>让人们品尝两组果酱，然后决定买哪一种。一组6种口味，另一组24种口味。结果，口味越多，买的人越少，在6种口味那组购买的人数，是24种口味那组的6倍。</p>
+</blockquote>
+<p>好啦,作者提供的三个解决反复纠结的方法是:</p>
+<ol>
+<li><p>把小事模式化。小事就是那些选错了也不会影响你生活的事情，比如说中午吃什么，衣服选什么颜色等等。一个人的精力有限，在小事上追求完美的话，性价比很低，最简单的处理方式就是找到一个固定的模式，然后变成自己的习惯。比如乔布斯经常穿黑色高领毛衣，高效率的人士定期去选购同一个品牌的衣服，就是模式化的处理方式。</p>
+</li>
+<li><p>遇到大事，可以做调查，或者做实验。这里说的大事是那些真正能改变你命运的选择，比如选择去哪个城市，找一份什么样的工作等。古典说，我们遇到大事的时候，第一步纠结的一般都是客观问题，它们都会有相对稳定的答案。比如哪项技术会发展得更快，什么方案更有效率等等，可以通过调查排除一些明显不靠谱的选择。</p>
+</li>
+<li><p>那些永远焦虑、但是从来不行动的人总是表现出深深的纠结。比如要创业的人，反复探讨哪个商业模式更容易上市，就是不去动手做。要学英语的人，总在纠结最适合的方法，就是没开始学。这些人在反复的纠结里，会强化一个暗示，就是只要做好了这个选择，生活就会一帆风顺，有重大改善。这样的暗示会让人更没有行动能力。生活中不存在完美的选择，尽快行动才是解决方案。</p>
+</li>
+</ol>
+<p>看完以后,我觉得很对, 特别是第三个建议,我也是经常在纠结哪个方法好,或者换一种理由(借口):哪个方法最适合我.  其实这就是心理偷懒的借口,你不去试试,你怎么知道这个方法适合你?这些都是要探索的.所以赶快行动,才是最重要的.就像作者说的. 生活中不存在完美的选择,尽快行动才是解决方案..</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/新知/">新知</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/方法/">方法</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/14/解决反复纠结3方法/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-关于睡眠" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/08/关于睡眠/">关于睡眠</a>
+    </h1>
+  
+
+        <a href="/2016/12/08/关于睡眠/" class="archive-article-date">
+  	<time datetime="2016-12-07T17:30:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-08</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天,我在回家的时候,看到一篇关于睡眠的文章, 写的是睡眠时间也是由基因控制的, 看的我,仿佛刷新了我的知识库,因为我一直认为睡眠是因为累了,就像是电池充电那样,电池没电了,需要充电,电池放电多,充电时间多,电池放电少,充电时间短..</p>
+<p>这篇文章大概意思如下, 日本研究团队从小白鼠的实验发现某段基因改变,使得小白鼠的睡眠时间长短也发生改变.</p>
+<p>研究人员先用化学试剂诱导差不多1万只小鼠，使它们发生基因突变，接着，又从这上万只小鼠中，找出睡眠时间明显比较长的那部分，培育它们的后代，看看这些爱睡觉的小鼠，是不是后代也一样爱睡觉。如果是，那就说明，这一谱系的小鼠爱睡觉，是由基因决定的。</p>
+<p>然后研究人员通过技术手段定位了”嗜睡基因”,并起名为sik3.</p>
+<p>接着,科学家们用化学手段，把变异的、爱睡觉的小鼠身体里的Sik3基因给敲除掉，结果发现小鼠的睡觉时间变短了。这就证实了，Sik3是让动物获得睡眠的基因。</p>
+<p>而且,研究人员也发现,这段基因sik3,不只小白鼠有,人也有,甚至果蝇和线虫一样有,而且都是对睡眠时间起作用的,所以,可以这么说,睡眠基因可能是生命底层设计中的一个重要环节，并不是等生物发展到高等动物阶段后才出现的。</p>
+<p>而且文章还说,睡眠在生物圈是一种非常普遍的行为，但是细想你就能体会到睡眠的重要性：睡眠往往占据生命总时长的三分之一，而且睡眠状态时，生物几乎完全没有防御能力，这么脆弱，这么容易受攻击的状态，竟然在进化中得以保留，那一定包含了一种生死攸关的功能。以至于获得这种功能的收益，远大于每天有三分之一时间，不设防的风险。</p>
+<p>是啊,其他生物我不懂,但是人只要有一整天不睡觉,到最后肯定非常累的慌,<br>但是如果在自然状态下,人类要面对野兽的时候,也没用说不睡觉的,但是睡觉又带来了极大的风险,稍微不注意,就是死亡的代价.</p>
+<p>所以,既然睡眠没有在大自然的选择下淘汰,必定有它特别重要的作用,所以,码农们,别熬夜了,我也要赶紧睡觉..</p>
+<p>我去睡觉啦,拜拜,除了给我介绍对象的事,其他的事不要打扰我..</p>
+<p>世界,晚安..</p>
+<pre><code>            .-&quot;&apos;&apos;-.  _
+          .&apos;       `( \
+        @/            &apos;)   ,--,__,-&quot;
+        /        /      \ /     /   _/
+      __|           ,   |/         /
+    .~  `\   / \ ,  |   /
+  .~      `\    `  /  _/   _/
+.~          `\  ~~`__/    /
+~             `--&apos;/
+             /   /    /    
+            /  /&apos;    /
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/08/关于睡眠/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+    </nav>
+  
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 xiebingcheng
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?200334353a6edd96c4b33d4c0c8e0311";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/2016/" style="font-size: 10px;">2016</a> <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/IDE/" style="font-size: 10px;">IDE</a> <a href="/tags/aip/" style="font-size: 10px;">aip</a> <a href="/tags/css/" style="font-size: 12.5px;">css</a> <a href="/tags/get/" style="font-size: 10px;">get</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 17.5px;">javascript</a> <a href="/tags/js/" style="font-size: 17.5px;">js</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mongdb/" style="font-size: 10px;">mongdb</a> <a href="/tags/node/" style="font-size: 12.5px;">node</a> <a href="/tags/nodejs/" style="font-size: 12.5px;">nodejs</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/os-x/" style="font-size: 10px;">os x</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/vue2/" style="font-size: 10px;">vue2</a> <a href="/tags/webstorm/" style="font-size: 10px;">webstorm</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/一些感悟/" style="font-size: 10px;">一些感悟</a> <a href="/tags/人工智能/" style="font-size: 12.5px;">人工智能</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a> <a href="/tags/定义/" style="font-size: 10px;">定义</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/新知/" style="font-size: 20px;">新知</a> <a href="/tags/方法/" style="font-size: 10px;">方法</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/网络请求/" style="font-size: 10px;">网络请求</a> <a href="/tags/美酒/" style="font-size: 12.5px;">美酒</a> <a href="/tags/踩坑/" style="font-size: 15px;">踩坑</a>
+    			</div>
+    	</section>
+    
+
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">心存善念  心向美好</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

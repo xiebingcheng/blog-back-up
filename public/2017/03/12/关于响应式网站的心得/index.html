@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>关于响应式网站的一些心得总结 | xiebingcheng的博客(每天进步一点点)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##写在前面的话
+以前的我,在学html,css的时候总感觉这些好简单,没有什么必要下太多的时间和功夫死磕在这里,但是当我后来在实际写页面中,就感觉出了力不从心,这些东西就是这样,就像女票,男票一样,你不理她她就不理你,你在她身上花的时间越多,她就会对你越好越温柔..(md,什么鬼,不是说写响应式网站的嘛?结果裤子都脱了,你却让我看这个?)
+哈哈,感悟不多说啦,下面是一些生活工作上的关于写页面的心">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于响应式网站的一些心得总结">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/关于响应式网站的心得/index.html">
+<meta property="og:site_name" content="xiebingcheng的博客(每天进步一点点)">
+<meta property="og:description" content="##写在前面的话
+以前的我,在学html,css的时候总感觉这些好简单,没有什么必要下太多的时间和功夫死磕在这里,但是当我后来在实际写页面中,就感觉出了力不从心,这些东西就是这样,就像女票,男票一样,你不理她她就不理你,你在她身上花的时间越多,她就会对你越好越温柔..(md,什么鬼,不是说写响应式网站的嘛?结果裤子都脱了,你却让我看这个?)
+哈哈,感悟不多说啦,下面是一些生活工作上的关于写页面的心">
+<meta property="og:updated_time" content="2017-03-19T18:05:27.015Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于响应式网站的一些心得总结">
+<meta name="twitter:description" content="##写在前面的话
+以前的我,在学html,css的时候总感觉这些好简单,没有什么必要下太多的时间和功夫死磕在这里,但是当我后来在实际写页面中,就感觉出了力不从心,这些东西就是这样,就像女票,男票一样,你不理她她就不理你,你在她身上花的时间越多,她就会对你越好越温柔..(md,什么鬼,不是说写响应式网站的嘛?结果裤子都脱了,你却让我看这个?)
+哈哈,感悟不多说啦,下面是一些生活工作上的关于写页面的心">
+  
+    <link rel="alternative" href="/atom.xml" title="xiebingcheng的博客(每天进步一点点)" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/assets/blogImg/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">xiebingcheng</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">是,我说来不及了,你就可以不努力了吗?</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">xiebingcheng</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/assets/blogImg/head.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">xiebingcheng</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">是,我说来不及了,你就可以不努力了吗?</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-关于响应式网站的心得" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于响应式网站的一些心得总结
+    </h1>
+  
+
+        <a href="/2017/03/12/关于响应式网站的心得/" class="archive-article-date">
+  	<time datetime="2017-03-12T09:13:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##写在前面的话</p>
+<p>以前的我,在学html,css的时候总感觉这些好简单,没有什么必要下太多的时间和功夫死磕在这里,但是当我后来在实际写页面中,就感觉出了力不从心,这些东西就是这样,就像女票,男票一样,你不理她她就不理你,你在她身上花的时间越多,她就会对你越好越温柔..(md,什么鬼,不是说写响应式网站的嘛?结果裤子都脱了,你却让我看这个?)</p>
+<p>哈哈,感悟不多说啦,下面是一些生活工作上的关于写页面的心得(响应式),那就直接进入正题了.</p>
+<p>在移动端迅猛发展的今天,pc和移动端的兼容是迫在眉睫.这个时候,响应式技术迎来了春天.</p>
+<p>不用说大家都知道,响应式网站无论对于ui还是前端的工作都是大大的减轻,<br>为什么这么说呢,<br>1.因为,只需要一份代码,就能实现移动pc的兼容,多出的工作量,只是css的一些样式改动(好过重新去写一份写的css啊),和一些js的工作量.<br>2.节省时间,可以做更多的事.<br>3.每个设备都能得到正确的设计;<br>4.搜索优化,google已经提出对响应式网站的搜索和优化,爬虫可以更加有效的搜索到网站的内容了.<br>5.兼容各种手机平板pc.  </p>
+<p>哎呀,不列举响应式的好了(我承认是我懒得再去网上抄这些优点了..),反正一句话,就是好!(当然,也有不好的一面,比如当公司要求支持低版本的IE系列时..)</p>
+<p>但是我不得不说一下,实现响应式网站的技术,重要的是媒体查询.弹性图片和弹性网格布局..</p>
+<p>##响应式网站的开发:</p>
+<p>###关于优雅降级还是渐渐增强:</p>
+<p>我的选择会选择优雅降级.虽然说,我们的共识是,一个东西先完善他们的功能才接下来完善他们的颜值,确实没错,这个理论.但是,要就事论事,我真的无法想象写一个网站,先在老旧的IE上写,完善他们的功能,同时颜值丑的要死,然后在渐渐增强..这样或许有点反人类吧..哈哈,所以我还是选择优雅降级比较稳妥,况且先在浏览器发展的这么快,时代在进步,用老旧浏览器的人实在很少很少了..</p>
+<p>关于做响应式网站,是先做小屏幕先的还是大屏幕呢?</p>
+<p>我原来是有点纠结这个问题的,但是呢,其实这个也不是个什么大问题,其实都可以啦,但是最好先选择目标用户多的人群,比如电商网站,先做小屏幕,因为现在用移动端购买电商上的东西在持续增加,又如P2P类的金融产品网站,最好还是先做pc端大屏幕先,因为pc端人数会多一些.</p>
+<p>###关于媒体查询断点的选择:</p>
+<p>这个我以前踩过坑,我要好好记录一下.不要选择按照设备型号来选择断点,比如:</p>
+<pre><code>@media only screen   //iPhone4 and 4S
+  and (min-device-width:320px)
+  and (min-device-width:480px)
+  and(-webkit-min-device-pixel-ratio:2){
+}
+</code></pre><p>这样的话,累死不说,估计想转后端了..哈哈.. 除非我们是打算针对特定的设备进行特定的优化,才用这样的断点,如果不是,就不要这样使用断点</p>
+<p>###断点的选择:</p>
+<p>通过屏幕大小的选择来选择断点,比如:</p>
+<p>0–480  小屏幕</p>
+<p>481–800 中屏幕</p>
+<p>801–1400 大屏幕</p>
+<p>1400以上 巨型屏幕</p>
+<p>不过,具体的断点选择,还是要靠产品和UI的理解和设计来选择断点,会更好的符合需求</p>
+<p>###用 img标签 还是用背景图片来引入图片?</p>
+<p>1.如果是必不可少的图片,比如一个logo图,要用img标签,因为太重要了,还可以加上alt属性来优化搜索爬虫.一举两得</p>
+<p>2.可有可无的图片,通过背景图片引入就行了.</p>
+<p>###顺便记录一下em和rem的区别,免得以后忘记..</p>
+<p>em是相对长度的单位</p>
+<p>em相对父元素的font-size<br>em有继承的效果<br>如果没有设置font-size,浏览器会有一个默认的em设置:1em=16px<br>用em的话,缺点就是比较混乱,因为他有继承,有点麻烦</p>
+<p>rem是相对html根元素的单位 </p>
+<p>浏览器默认的rem也是16px<br>缺点(随着时间推移,这个其实也不算缺点了):不是所有浏览器都兼容rem,在IE8及以下版本IE是不支持rem这个单位的.</p>
+<p>如果真心想在这个IE8下使用rem,可以用css hack写法(应该算兼容写法):</p>
+<pre><code>html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+P{
+    font-size:1rem;
+    font-size:10px
+}
+</code></pre><p>就是这样..</p>
+<p>###对,还有一个地方,我要记下来,以前坑我好久的..(中文最小为12px)</p>
+<p>就是如果设置好了html等于62.5%,这个时候1rem等于10px,但是如果这个时候拿这个rem来设置比如说 line-height:3rem 的话, 按道理应该是30px的行高,但是结果不是这样的, 是36px的行高, 因为chrome浏览器对中文有一个最小的设置是12px,所以关于中文这些的rem设置会有一点误差,实在要求精确,就用px来设置.</p>
+<p>###又想起了一个,就是坑,就是用ul , li的话,多个li在一起,必然要换行,这样的代码我们也好书写和后期管理,但是这样会出现一个空白符,这个的存在会影响布局的精准性..</p>
+<p>解决方法:</p>
+<pre><code>1.&lt;li&gt;&lt;/li&gt;直接不写后面的闭合标签(浏览器会自动帮我们加上,这样就不会有空白符出现了) 
+
+2.在li加上样式 margin-left: -3px;
+</code></pre><p>###关于透明的使用</p>
+<p>1.当要求背景透明,但是内容不要求透明,则 </p>
+<pre><code>background-color: rgba(255, 255, 255, 0.8);  //0最后面的值为透明度
+</code></pre><p>2.当要求,一起透明的情况 opacity:0.8,(ie用filter:Alpha(opacity=80));</p>
+<p>###当前面这些坑,避免了以后,就可以开始动手写响应式了,流程如下:</p>
+<p>1.创建工程文件夹<br>    基本的目录结构<br>    src //主文件夹</p>
+<pre><code>css //样式表文件夹
+js //Javascript文件夹
+img //图片文件夹
+tpl //模板文件夹
+swf //Flash文件
+less //动态样式表，或者sass
+doc //文档文件夹
+</code></pre><p>js文件夹里<br>    vendor //引用的库的文件夹</p>
+<p>src文件夹下还有</p>
+<pre><code>robots.txt //给爬虫看的,让爬虫知道什么该爬什么不该爬.
+</code></pre><p>####开始建站</p>
+<pre><code>html lang=&quot;zh-CN&quot; //声明这是简体中文网站
+&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;  &lt;!--要求IE用最新的edge可用的模式渲染这个html--&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=deviece-width,initial-scale=1&quot;&gt; &lt;!--设置viewport的视口的比例,初始缩放比例为1--&gt;
+</code></pre><p>然后先写好html(个人习惯),基本大纲结构如下(以前我不太注重这些什么结构,但是后来我发现,结构写的好有助于seo的优化,爬虫更好的抓取,还有比如一些盲人朋友,使用阅读器阅读我们的网站时,更加有助于机器识别内容等等,所以,还是必须要把结构弄好的!),<a href="https://gsnedders.html5.org/" target="_blank" rel="external">查看html大纲的网站,</a>如下:</p>
+<pre><code>head
+ meta
+ meta
+ title
+ meta
+ link //引用的css等
+ link
+ link
+body
+ header //使用h5新标签,对IE8及以下不兼容,使用html5shiv库,让兼容
+  nav
+ div.container //主体
+  section
+  section 
+  section
+ footer  //网页最底部
+  ul
+  p
+</code></pre><p>这就是大体的html大纲结构,接下来到css<br>关于css,肯定要引入一个重置样式,因为每个浏览器的定义不一样嘛.以前都是用 reset.css 这个重置的css,但是太暴力了,对待这些元素,而且非常让我不爽的是,一打开chrome的F12,然后一堆样式在里面,感觉看的好难看.最近新发现了一个重置的样式–normalize.css 这个感觉更加的友好,对元素来说,没这么暴力. 所以决定用它了.</p>
+<p><a href="http://necolas.github.io/normalize.css/" target="_blank" rel="external">normalize.css网址</a></p>
+<pre><code>html {
+font-size: 62.5%; /* 1rem = 10px */
+color: #222;
+}
+</code></pre><p>设置了上面的样式后,让rem好计算一点..</p>
+<p>然后写完自定义的页面css后,就开始写媒体查询了:</p>
+<pre><code>@media only screen and (max-width: 50em) { //800
+/*这里的rem的值不是通过html的字体大小来换算的,而是通过浏览器默认的值大小来换算的 也就是1rem = 16px,em也是一样的换算方法*/
+
+}
+
+@media only screen and (min-width: 30.0625em)and (max-width: 50em) { //481 -- 800 
+
+}
+
+@media only screen and (max-width: 30em) {  //480
+
+}
+</code></pre><p>这个就是响应式的样式,就姑且把它的断点分成0-480, 481-800, 800以上.</p>
+<p>####响应式图片</p>
+<p>写完兼容屏幕大小的css后,最重要的应该就是图片的了,图片也需要写响应式的,要不然一张图片很大,在移动端怎么看?一张图片很小,在pc大屏幕上怎么看?这里主要说的是轮播图的图片.</p>
+<p>实现相应式图片的方法,</p>
+<p>1.用js代码实现:</p>
+<pre><code>$(document).ready(function(){
+  function makeImageResponsive(){
+      var width = $(window).width();
+      var img = $(&quot;.content img&quot;);
+      if(width&lt;= 480){
+        img.attr(&apos;src&apos;,img/480.png);
+    }else if(width&lt;=800){
+        img.attr(&apos;src&apos;,img/800.png);
+     }else { 
+        img.attr(&quot;src&quot;,img/1600.png)
+    }
+   }
+   $(window).on(&quot;resize load&quot; , makeImageResponsive);
+})
+</code></pre><p>2.img的属性实现:</p>
+<pre><code>&lt;img class=&apos;img&apos; src=&quot;img/480.png&quot; srcset=&quot;img/480.png 480w, srcset=&quot;img/800.png 800w, srcset=&quot;img/1600.png 1600w&quot; sizes=&quot;100vw&quot;&gt; //sizes是设置视口的宽度,如果定义图片显示50%,那视口设置为50vw即可.
+</code></pre><p>3.用html5的picture标签</p>
+<pre><code>&lt;picture&gt;
+&lt;source srcset=&quot;img/ad001-l.png&quot; media=&quot;(min-width:50em)&quot;&gt;
+&lt;source srcset=&quot;img/ad001-m.png&quot; media=&quot;(min-width:30em)&quot;&gt;
+&lt;img src=&quot;img/ad001.png&quot; alt=&quot;年度报告&quot;&gt;
+&lt;/picture&gt;
+</code></pre><p>第三个方法比第二种更加能精确点的控制浏览器对图片的选用,而且可以支持横屏的时候的使用.<br>虽然这个新的picture标签还有很多的老版本浏览器不兼容,但是可以通过一个库来解决这个问题,就是<a href="http://scottjehl.github.io/picturefill/" target="_blank" rel="external">picturefill.js</a><br>当然,就算用了这个库,但是在IE9下,还是无法识别这个picture标签,又要hack一下css的写法,用video标签即可代替,比如:</p>
+<pre><code>&lt;picture&gt; &lt;!--[if IE 9]&gt;&lt;videostyle=&quot;display:none;&quot;&gt;&lt;![endif]--&gt;
+ &lt;source srcset=&quot;smaller.jpg&quot; media=&quot;(max-width: 768px)&quot;&gt; &lt;source srcset=&quot;default.jpg&quot;&gt; &lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt; 
+&lt;img srcset=&quot;default.jpg&quot; alt=&quot;My default image&quot;&gt; 
+&lt;/picture&gt;
+</code></pre><p>详见大漠博客的<a href="https://www.w3cplus.com/html5/quick-tip-how-to-use-html5-picture-for-responsive-images.html" target="_blank" rel="external">如何使用 HTML5 的picture元素处理响应式图片</a></p>
+<p>到此,基本搞定响应式开发的大概步骤了,剩下的就需要去各个浏览器去调试一下有什么bug即可..</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+        <div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode"></div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/03/22/vue2-0学习之旅/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vue2.0学习之旅
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/10/javascript常用的api/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javascript常用的api记录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="关于响应式网站的心得" data-title="关于响应式网站的一些心得总结" data-url="http://yoursite.com/2017/03/12/关于响应式网站的心得/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"xiebingcheng"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 xiebingcheng
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?200334353a6edd96c4b33d4c0c8e0311";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/2016/" style="font-size: 10px;">2016</a> <a href="/tags/AI/" style="font-size: 10px;">AI</a> <a href="/tags/IDE/" style="font-size: 10px;">IDE</a> <a href="/tags/aip/" style="font-size: 10px;">aip</a> <a href="/tags/css/" style="font-size: 12.5px;">css</a> <a href="/tags/get/" style="font-size: 10px;">get</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 17.5px;">javascript</a> <a href="/tags/js/" style="font-size: 17.5px;">js</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mongdb/" style="font-size: 10px;">mongdb</a> <a href="/tags/node/" style="font-size: 12.5px;">node</a> <a href="/tags/nodejs/" style="font-size: 12.5px;">nodejs</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/os-x/" style="font-size: 10px;">os x</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/vue2/" style="font-size: 10px;">vue2</a> <a href="/tags/webstorm/" style="font-size: 10px;">webstorm</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/一些感悟/" style="font-size: 10px;">一些感悟</a> <a href="/tags/人工智能/" style="font-size: 12.5px;">人工智能</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a> <a href="/tags/响应式/" style="font-size: 10px;">响应式</a> <a href="/tags/定义/" style="font-size: 10px;">定义</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/新知/" style="font-size: 20px;">新知</a> <a href="/tags/方法/" style="font-size: 10px;">方法</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/网络请求/" style="font-size: 10px;">网络请求</a> <a href="/tags/美酒/" style="font-size: 12.5px;">美酒</a> <a href="/tags/踩坑/" style="font-size: 15px;">踩坑</a>
+    			</div>
+    	</section>
+    
+
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">心存善念  心向美好</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>xiebingcheng的博客(每天进步一点点)</title>
+  <subtitle>是,我说来不及了,你就可以不努力了吗?</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-05-13T12:44:23.337Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>xiebingcheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mongdb使用方法</title>
+    <link href="http://yoursite.com/2017/05/13/mongdb%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2017/05/13/mongdb使用方法/</id>
+    <published>2017-05-13T12:40:21.000Z</published>
+    <updated>2017-05-13T12:44:23.337Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.安装mongdb(必须)</p>
+<p>2.在安装好的mongdb文件内找到bin文件夹,这此文件夹中打开命令工具(cmd).然后输入</p>
+<pre><code>mongdb --dbpath &quot;d:\(mongdb的根文件夹名)/data/db&quot; //在什么盘就写什么盘
+</code></pre><p>然后在bin打开另一个cmd.</p>
+<pre><code>mongo //输入这个命令.
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.安装mongdb(必须)&lt;/p&gt;
+&lt;p&gt;2.在安装好的mongdb文件内找到bin文件夹,这此文件夹中打开命令工具(cmd).然后输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mongdb --dbpath &amp;quot;d:\(mongdb的根文件夹名)/data/db&amp;quot
+    
+    </summary>
+    
+    
+      <category term="mongdb" scheme="http://yoursite.com/tags/mongdb/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows装mac系统(虚拟机方法)</title>
+    <link href="http://yoursite.com/2017/04/08/Windows%E8%A3%85mac%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2017/04/08/Windows装mac系统/</id>
+    <published>2017-04-08T13:12:07.000Z</published>
+    <updated>2017-04-09T13:33:24.735Z</updated>
+    
+    <content type="html"><![CDATA[<p>穷鬼没钱买mac,但是现在又需要mac系统,安装特定的软件.只好找个虚拟机安装mac的系统了.</p>
+<p>这里找到两个博文, 重点是跟着博文1做,然后博文2辅助.</p>
+<p><a href="http://blog.csdn.net/hamber_bao/article/details/51335834" target="_blank" rel="external">博文1</a></p>
+<p><a href="http://www.jianshu.com/p/d2da6dd8cdb3" target="_blank" rel="external">博文2</a></p>
+<p>首先跟着博文1来做: 博文1说的vmware workstation和VM12(VMware-player),其实是一个东西,一个是收费版的,另一个是简化版没收费的.</p>
+<p>然后,跟着博文1做的时候,我遇见了大概3个报错,一个是 机器弹窗报错 “二进制错误” , 这个解决方法是: 进bios–将 Inter Virtuailization Technology 设置成enabled .(但是要注意,有些电脑的cpu不支持虚拟化,所以开不了,只能选择放弃安装mac的系统.可以用cpu-z 这个软件来测试一下,是否有此功能,查看方法是cpu选项的Instructions有VT-x,这个项,说明此电脑支持开启虚拟.)</p>
+<p>第二个错是 </p>
+<pre><code>锁定文件失败
+
+打开磁盘&quot;E:\MAC\OS X 10.11.vmdk&quot;或它所依赖的
+某个快照磁盘。
+
+模块&quot;Disk&quot;启动失败。
+
+未能启动虚拟机。
+</code></pre><p>解决方法是:找到VM根目录(就是mac系统的根目录)，搜索.lck文件，全部删除，重启虚拟机即可.</p>
+<p>第三个错误是 和博文一说的一样, 就是 “不可恢复错误:(vcpu-0)” </p>
+<p>解决方法和博文的一样即可. 找到根文件下的 OS X xx.xx.vmx,用记事本打开,在smc.present = “TRUE”后面，手动添加一句smc.version = 0。</p>
+<p>然后安装好的虚拟机里的mac系统后,设置os x 系统按照博文2来就行,然后记住安装博文2最后那里提到的,VMware Tools</p>
+<p>先弹出os x 的光盘,然后在虚拟机软件管理项目选项卡,安装VMware Tools,然后就行了.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;穷鬼没钱买mac,但是现在又需要mac系统,安装特定的软件.只好找个虚拟机安装mac的系统了.&lt;/p&gt;
+&lt;p&gt;这里找到两个博文, 重点是跟着博文1做,然后博文2辅助.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/hamber_bao/artic
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="http://yoursite.com/tags/mac/"/>
+    
+      <category term="os x" scheme="http://yoursite.com/tags/os-x/"/>
+    
+      <category term="windows" scheme="http://yoursite.com/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue2.0学习之旅</title>
+    <link href="http://yoursite.com/2017/03/22/vue2-0%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%97%85/"/>
+    <id>http://yoursite.com/2017/03/22/vue2-0学习之旅/</id>
+    <published>2017-03-22T12:46:09.000Z</published>
+    <updated>2017-03-26T16:52:05.234Z</updated>
+    
+    <content type="html"><![CDATA[<p>贴几个有关的vue网站.</p>
+<p><a href="https://cn.vuejs.org/" target="_blank" rel="external">vue中文官网</a></p>
+<p><a href="https:github.com/vuejs/vue" target="_blank" rel="external">vue源码</a></p>
+<p><a href="https://forum.vuejs.org" target="_blank" rel="external">vue官方论坛</a></p>
+<p><a href="https://github.com/vuejs" target="_blank" rel="external">vue官方工具</a></p>
+<p><a href="http://www.vue-js.com/" target="_blank" rel="external">vue中文社区</a></p>
+<p>安装vue-cli </p>
+<pre><code>npm install vue-cli -g
+
+vue init webpack  //在要创建的文件夹下执行命令
+
+npm install //安装依赖
+
+npm run dev //在localhost中启动测试服务器
+
+npm run build //生成上线目录
+</code></pre><p>vue标签的属性和条件渲染</p>
+<pre><code>v-bind动态的绑定标签属性 简写: :
+
+使用v-bind是可以绑定class和内联的样式
+
+使用v-if,v-show,v-else进行条件渲染
+
+其中v-if是删除元素,直接从文档流里面删除,v-show删除元素,并不会删除文档流.
+</code></pre><p>单文件组件</p>
+<pre><code>文本渲染-v-html,{{}},v-text
+</code></pre><p>事件绑定</p>
+<pre><code>v-on @是简写, 在methods里事件绑定
+</code></pre><p>表单数据模型双向绑定</p>
+<pre><code>v-model
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;贴几个有关的vue网站.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cn.vuejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;vue中文官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https:github.com/vuejs/vue
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="vue2" scheme="http://yoursite.com/tags/vue2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于响应式网站的一些心得总结</title>
+    <link href="http://yoursite.com/2017/03/12/%E5%85%B3%E4%BA%8E%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E7%AB%99%E7%9A%84%E5%BF%83%E5%BE%97/"/>
+    <id>http://yoursite.com/2017/03/12/关于响应式网站的心得/</id>
+    <published>2017-03-12T09:13:37.000Z</published>
+    <updated>2017-03-19T18:05:27.015Z</updated>
+    
+    <content type="html"><![CDATA[<p>##写在前面的话</p>
+<p>以前的我,在学html,css的时候总感觉这些好简单,没有什么必要下太多的时间和功夫死磕在这里,但是当我后来在实际写页面中,就感觉出了力不从心,这些东西就是这样,就像女票,男票一样,你不理她她就不理你,你在她身上花的时间越多,她就会对你越好越温柔..(md,什么鬼,不是说写响应式网站的嘛?结果裤子都脱了,你却让我看这个?)</p>
+<p>哈哈,感悟不多说啦,下面是一些生活工作上的关于写页面的心得(响应式),那就直接进入正题了.</p>
+<p>在移动端迅猛发展的今天,pc和移动端的兼容是迫在眉睫.这个时候,响应式技术迎来了春天.</p>
+<p>不用说大家都知道,响应式网站无论对于ui还是前端的工作都是大大的减轻,<br>为什么这么说呢,<br>1.因为,只需要一份代码,就能实现移动pc的兼容,多出的工作量,只是css的一些样式改动(好过重新去写一份写的css啊),和一些js的工作量.<br>2.节省时间,可以做更多的事.<br>3.每个设备都能得到正确的设计;<br>4.搜索优化,google已经提出对响应式网站的搜索和优化,爬虫可以更加有效的搜索到网站的内容了.<br>5.兼容各种手机平板pc.  </p>
+<p>哎呀,不列举响应式的好了(我承认是我懒得再去网上抄这些优点了..),反正一句话,就是好!(当然,也有不好的一面,比如当公司要求支持低版本的IE系列时..)</p>
+<p>但是我不得不说一下,实现响应式网站的技术,重要的是媒体查询.弹性图片和弹性网格布局..</p>
+<p>##响应式网站的开发:</p>
+<p>###关于优雅降级还是渐渐增强:</p>
+<p>我的选择会选择优雅降级.虽然说,我们的共识是,一个东西先完善他们的功能才接下来完善他们的颜值,确实没错,这个理论.但是,要就事论事,我真的无法想象写一个网站,先在老旧的IE上写,完善他们的功能,同时颜值丑的要死,然后在渐渐增强..这样或许有点反人类吧..哈哈,所以我还是选择优雅降级比较稳妥,况且先在浏览器发展的这么快,时代在进步,用老旧浏览器的人实在很少很少了..</p>
+<p>关于做响应式网站,是先做小屏幕先的还是大屏幕呢?</p>
+<p>我原来是有点纠结这个问题的,但是呢,其实这个也不是个什么大问题,其实都可以啦,但是最好先选择目标用户多的人群,比如电商网站,先做小屏幕,因为现在用移动端购买电商上的东西在持续增加,又如P2P类的金融产品网站,最好还是先做pc端大屏幕先,因为pc端人数会多一些.</p>
+<p>###关于媒体查询断点的选择:</p>
+<p>这个我以前踩过坑,我要好好记录一下.不要选择按照设备型号来选择断点,比如:</p>
+<pre><code>@media only screen   //iPhone4 and 4S
+  and (min-device-width:320px)
+  and (min-device-width:480px)
+  and(-webkit-min-device-pixel-ratio:2){
+}
+</code></pre><p>这样的话,累死不说,估计想转后端了..哈哈.. 除非我们是打算针对特定的设备进行特定的优化,才用这样的断点,如果不是,就不要这样使用断点</p>
+<p>###断点的选择:</p>
+<p>通过屏幕大小的选择来选择断点,比如:</p>
+<p>0–480  小屏幕</p>
+<p>481–800 中屏幕</p>
+<p>801–1400 大屏幕</p>
+<p>1400以上 巨型屏幕</p>
+<p>不过,具体的断点选择,还是要靠产品和UI的理解和设计来选择断点,会更好的符合需求</p>
+<p>###用 img标签 还是用背景图片来引入图片?</p>
+<p>1.如果是必不可少的图片,比如一个logo图,要用img标签,因为太重要了,还可以加上alt属性来优化搜索爬虫.一举两得</p>
+<p>2.可有可无的图片,通过背景图片引入就行了.</p>
+<p>###顺便记录一下em和rem的区别,免得以后忘记..</p>
+<p>em是相对长度的单位</p>
+<p>em相对父元素的font-size<br>em有继承的效果<br>如果没有设置font-size,浏览器会有一个默认的em设置:1em=16px<br>用em的话,缺点就是比较混乱,因为他有继承,有点麻烦</p>
+<p>rem是相对html根元素的单位 </p>
+<p>浏览器默认的rem也是16px<br>缺点(随着时间推移,这个其实也不算缺点了):不是所有浏览器都兼容rem,在IE8及以下版本IE是不支持rem这个单位的.</p>
+<p>如果真心想在这个IE8下使用rem,可以用css hack写法(应该算兼容写法):</p>
+<pre><code>html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+P{
+    font-size:1rem;
+    font-size:10px
+}
+</code></pre><p>就是这样..</p>
+<p>###对,还有一个地方,我要记下来,以前坑我好久的..(中文最小为12px)</p>
+<p>就是如果设置好了html等于62.5%,这个时候1rem等于10px,但是如果这个时候拿这个rem来设置比如说 line-height:3rem 的话, 按道理应该是30px的行高,但是结果不是这样的, 是36px的行高, 因为chrome浏览器对中文有一个最小的设置是12px,所以关于中文这些的rem设置会有一点误差,实在要求精确,就用px来设置.</p>
+<p>###又想起了一个,就是坑,就是用ul , li的话,多个li在一起,必然要换行,这样的代码我们也好书写和后期管理,但是这样会出现一个空白符,这个的存在会影响布局的精准性..</p>
+<p>解决方法:</p>
+<pre><code>1.&lt;li&gt;&lt;/li&gt;直接不写后面的闭合标签(浏览器会自动帮我们加上,这样就不会有空白符出现了) 
+
+2.在li加上样式 margin-left: -3px;
+</code></pre><p>###关于透明的使用</p>
+<p>1.当要求背景透明,但是内容不要求透明,则 </p>
+<pre><code>background-color: rgba(255, 255, 255, 0.8);  //0最后面的值为透明度
+</code></pre><p>2.当要求,一起透明的情况 opacity:0.8,(ie用filter:Alpha(opacity=80));</p>
+<p>###当前面这些坑,避免了以后,就可以开始动手写响应式了,流程如下:</p>
+<p>1.创建工程文件夹<br>    基本的目录结构<br>    src //主文件夹</p>
+<pre><code>css //样式表文件夹
+js //Javascript文件夹
+img //图片文件夹
+tpl //模板文件夹
+swf //Flash文件
+less //动态样式表，或者sass
+doc //文档文件夹
+</code></pre><p>js文件夹里<br>    vendor //引用的库的文件夹</p>
+<p>src文件夹下还有</p>
+<pre><code>robots.txt //给爬虫看的,让爬虫知道什么该爬什么不该爬.
+</code></pre><p>####开始建站</p>
+<pre><code>html lang=&quot;zh-CN&quot; //声明这是简体中文网站
+&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;  &lt;!--要求IE用最新的edge可用的模式渲染这个html--&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=deviece-width,initial-scale=1&quot;&gt; &lt;!--设置viewport的视口的比例,初始缩放比例为1--&gt;
+</code></pre><p>然后先写好html(个人习惯),基本大纲结构如下(以前我不太注重这些什么结构,但是后来我发现,结构写的好有助于seo的优化,爬虫更好的抓取,还有比如一些盲人朋友,使用阅读器阅读我们的网站时,更加有助于机器识别内容等等,所以,还是必须要把结构弄好的!),<a href="https://gsnedders.html5.org/" target="_blank" rel="external">查看html大纲的网站,</a>如下:</p>
+<pre><code>head
+ meta
+ meta
+ title
+ meta
+ link //引用的css等
+ link
+ link
+body
+ header //使用h5新标签,对IE8及以下不兼容,使用html5shiv库,让兼容
+  nav
+ div.container //主体
+  section
+  section 
+  section
+ footer  //网页最底部
+  ul
+  p
+</code></pre><p>这就是大体的html大纲结构,接下来到css<br>关于css,肯定要引入一个重置样式,因为每个浏览器的定义不一样嘛.以前都是用 reset.css 这个重置的css,但是太暴力了,对待这些元素,而且非常让我不爽的是,一打开chrome的F12,然后一堆样式在里面,感觉看的好难看.最近新发现了一个重置的样式–normalize.css 这个感觉更加的友好,对元素来说,没这么暴力. 所以决定用它了.</p>
+<p><a href="http://necolas.github.io/normalize.css/" target="_blank" rel="external">normalize.css网址</a></p>
+<pre><code>html {
+font-size: 62.5%; /* 1rem = 10px */
+color: #222;
+}
+</code></pre><p>设置了上面的样式后,让rem好计算一点..</p>
+<p>然后写完自定义的页面css后,就开始写媒体查询了:</p>
+<pre><code>@media only screen and (max-width: 50em) { //800
+/*这里的rem的值不是通过html的字体大小来换算的,而是通过浏览器默认的值大小来换算的 也就是1rem = 16px,em也是一样的换算方法*/
+
+}
+
+@media only screen and (min-width: 30.0625em)and (max-width: 50em) { //481 -- 800 
+
+}
+
+@media only screen and (max-width: 30em) {  //480
+
+}
+</code></pre><p>这个就是响应式的样式,就姑且把它的断点分成0-480, 481-800, 800以上.</p>
+<p>####响应式图片</p>
+<p>写完兼容屏幕大小的css后,最重要的应该就是图片的了,图片也需要写响应式的,要不然一张图片很大,在移动端怎么看?一张图片很小,在pc大屏幕上怎么看?这里主要说的是轮播图的图片.</p>
+<p>实现相应式图片的方法,</p>
+<p>1.用js代码实现:</p>
+<pre><code>$(document).ready(function(){
+  function makeImageResponsive(){
+      var width = $(window).width();
+      var img = $(&quot;.content img&quot;);
+      if(width&lt;= 480){
+        img.attr(&apos;src&apos;,img/480.png);
+    }else if(width&lt;=800){
+        img.attr(&apos;src&apos;,img/800.png);
+     }else { 
+        img.attr(&quot;src&quot;,img/1600.png)
+    }
+   }
+   $(window).on(&quot;resize load&quot; , makeImageResponsive);
+})
+</code></pre><p>2.img的属性实现:</p>
+<pre><code>&lt;img class=&apos;img&apos; src=&quot;img/480.png&quot; srcset=&quot;img/480.png 480w, srcset=&quot;img/800.png 800w, srcset=&quot;img/1600.png 1600w&quot; sizes=&quot;100vw&quot;&gt; //sizes是设置视口的宽度,如果定义图片显示50%,那视口设置为50vw即可.
+</code></pre><p>3.用html5的picture标签</p>
+<pre><code>&lt;picture&gt;
+&lt;source srcset=&quot;img/ad001-l.png&quot; media=&quot;(min-width:50em)&quot;&gt;
+&lt;source srcset=&quot;img/ad001-m.png&quot; media=&quot;(min-width:30em)&quot;&gt;
+&lt;img src=&quot;img/ad001.png&quot; alt=&quot;年度报告&quot;&gt;
+&lt;/picture&gt;
+</code></pre><p>第三个方法比第二种更加能精确点的控制浏览器对图片的选用,而且可以支持横屏的时候的使用.<br>虽然这个新的picture标签还有很多的老版本浏览器不兼容,但是可以通过一个库来解决这个问题,就是<a href="http://scottjehl.github.io/picturefill/" target="_blank" rel="external">picturefill.js</a><br>当然,就算用了这个库,但是在IE9下,还是无法识别这个picture标签,又要hack一下css的写法,用video标签即可代替,比如:</p>
+<pre><code>&lt;picture&gt; &lt;!--[if IE 9]&gt;&lt;videostyle=&quot;display:none;&quot;&gt;&lt;![endif]--&gt;
+ &lt;source srcset=&quot;smaller.jpg&quot; media=&quot;(max-width: 768px)&quot;&gt; &lt;source srcset=&quot;default.jpg&quot;&gt; &lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt; 
+&lt;img srcset=&quot;default.jpg&quot; alt=&quot;My default image&quot;&gt; 
+&lt;/picture&gt;
+</code></pre><p>详见大漠博客的<a href="https://www.w3cplus.com/html5/quick-tip-how-to-use-html5-picture-for-responsive-images.html" target="_blank" rel="external">如何使用 HTML5 的picture元素处理响应式图片</a></p>
+<p>到此,基本搞定响应式开发的大概步骤了,剩下的就需要去各个浏览器去调试一下有什么bug即可..</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##写在前面的话&lt;/p&gt;
+&lt;p&gt;以前的我,在学html,css的时候总感觉这些好简单,没有什么必要下太多的时间和功夫死磕在这里,但是当我后来在实际写页面中,就感觉出了力不从心,这些东西就是这样,就像女票,男票一样,你不理她她就不理你,你在她身上花的时间越多,她就会对你越好越
+    
+    </summary>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="响应式" scheme="http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F/"/>
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript常用的api记录</title>
+    <link href="http://yoursite.com/2017/03/10/javascript%E5%B8%B8%E7%94%A8%E7%9A%84api/"/>
+    <id>http://yoursite.com/2017/03/10/javascript常用的api/</id>
+    <published>2017-03-10T14:30:48.000Z</published>
+    <updated>2017-03-20T23:37:19.671Z</updated>
+    
+    <content type="html"><![CDATA[<p>常用API合集</p>
+<p>一、节点</p>
+<p>1.1 节点属性</p>
+<p>Node.nodeName   //返回节点名称，只读<br>Node.nodeType   //返回节点类型的常数值，只读<br>Node.nodeValue  //返回Text或Comment节点的文本值，只读<br>Node.textContent  //返回当前节点和它的所有后代节点的文本内容，可读写<br>Node.baseURI    //返回当前网页的绝对路径</p>
+<p>Node.ownerDocument  //返回当前节点所在的顶层文档对象，即document<br>Node.nextSibling  //返回紧跟在当前节点后面的第一个兄弟节点<br>Node.previousSibling  //返回当前节点前面的、距离最近的一个兄弟节点<br>Node.parentNode   //返回当前节点的父节点<br>Node.parentElement  //返回当前节点的父Element节点<br>Node.childNodes   //返回当前节点的所有子节点<br>Node.firstChild  //返回当前节点的第一个子节点<br>Node.lastChild   //返回当前节点的最后一个子节点</p>
+<p>//parentNode接口<br>Node.children  //返回指定节点的所有Element子节点<br>Node.firstElementChild  //返回当前节点的第一个Element子节点<br>Node.lastElementChild   //返回当前节点的最后一个Element子节点<br>Node.childElementCount  //返回当前节点所有Element子节点的数目。<br>1.2 操作</p>
+<p>Node.appendChild(node)   //向节点添加最后一个子节点<br>Node.hasChildNodes()   //返回布尔值，表示当前节点是否有子节点<br>Node.cloneNode(true);  // 默认为false(克隆节点), true(克隆节点及其属性，以及后代)<br>Node.insertBefore(newNode,oldNode)  // 在指定子节点之前插入新的子节点<br>Node.removeChild(node)   //删除节点，在要删除节点的父节点上操作<br>Node.replaceChild(newChild,oldChild)  //替换节点<br>Node.contains(node)  //返回一个布尔值，表示参数节点是否为当前节点的后代节点。<br>Node.compareDocumentPosition(node)   //返回一个7个比特位的二进制值，表示参数节点和当前节点的关系<br>Node.isEqualNode(noe)  //返回布尔值，用于检查两个节点是否相等。所谓相等的节点，指的是两个节点的类型相同、属性相同、子节点相同。<br>Node.normalize()   //用于清理当前节点内部的所有Text节点。它会去除空的文本节点，并且将毗邻的文本节点合并成一个。</p>
+<p>//ChildNode接口<br>Node.remove()  //用于删除当前节点<br>Node.before()  //<br>Node.after()<br>Node.replaceWith()<br>1.3 Document节点</p>
+<p>1.3.1 Document节点的属性</p>
+<p>document.doctype   //<br>document.documentElement  //返回当前文档的根节点<br>document.defaultView   //返回document对象所在的window对象<br>document.body   //返回当前文档的<body>节点<br>document.head   //返回当前文档的<head>节点<br>document.activeElement  //返回当前文档中获得焦点的那个元素。</head></body></p>
+<p>//节点集合属性<br>document.links  //返回当前文档的所有a元素<br>document.forms  //返回页面中所有表单元素<br>document.images  //返回页面中所有图片元素<br>document.embeds  //返回网页中所有嵌入对象<br>document.scripts  //返回当前文档的所有脚本<br>document.styleSheets  //返回当前网页的所有样式表</p>
+<p>//文档信息属性<br>document.documentURI  //表示当前文档的网址<br>document.URL  //返回当前文档的网址<br>document.domain  //返回当前文档的域名<br>document.lastModified  //返回当前文档最后修改的时间戳<br>document.location  //返回location对象，提供当前文档的URL信息<br>document.referrer  //返回当前文档的访问来源<br>document.title    //返回当前文档的标题<br>document.characterSet属性返回渲染当前文档的字符集，比如UTF-8、ISO-8859-1。<br>document.readyState  //返回当前文档的状态<br>document.designMode  //控制当前文档是否可编辑，可读写<br>document.compatMode  //返回浏览器处理文档的模式<br>document.cookie   //用来操作Cookie<br>1.3.2 Document节点的方法</p>
+<p>（1）读写方法</p>
+<p>document.open()   //用于新建并打开一个文档<br>document.close()   //不安比open方法所新建的文档<br>document.write()   //用于向当前文档写入内容<br>document.writeIn()  //用于向当前文档写入内容，尾部添加换行符。<br>（2）查找节点</p>
+<p>document.querySelector(selectors)   //接受一个CSS选择器作为参数，返回第一个匹配该选择器的元素节点。<br>document.querySelectorAll(selectors)  //接受一个CSS选择器作为参数，返回所有匹配该选择器的元素节点。<br>document.getElementsByTagName(tagName)  //返回所有指定HTML标签的元素<br>document.getElementsByClassName(className)   //返回包括了所有class名字符合指定条件的元素<br>document.getElementsByName(name)   //用于选择拥有name属性的HTML元素（比如<form>、<radio>、<img>、<frame>、<embed>和<object>等）<br>document.getElementById(id)   //返回匹配指定id属性的元素节点。<br>document.elementFromPoint(x,y)  //返回位于页面指定位置最上层的Element子节点。<br>（3）生成节点</object></radio></form></p>
+<p>document.createElement(tagName)   //用来生成HTML元素节点。<br>document.createTextNode(text)   //用来生成文本节点<br>document.createAttribute(name)  //生成一个新的属性对象节点，并返回它。<br>document.createDocumentFragment()  //生成一个DocumentFragment对象<br>（4）事件方法</p>
+<p>document.createEvent(type)   //生成一个事件对象，该对象能被element.dispatchEvent()方法使用<br>document.addEventListener(type,listener,capture)  //注册事件<br>document.removeEventListener(type,listener,capture)  //注销事件<br>document.dispatchEvent(event)  //触发事件<br>（5）其他</p>
+<p>document.hasFocus()   //返回一个布尔值，表示当前文档之中是否有元素被激活或获得焦点。<br>document.adoptNode(externalNode)  //将某个节点，从其原来所在的文档移除，插入当前文档，并返回插入后的新节点。<br>document.importNode(externalNode, deep)   //从外部文档拷贝指定节点，插入当前文档。<br>1.4 Element节点</p>
+<p>1.4.1 Element节点的属性</p>
+<p>（1）特性属性</p>
+<p>Element.attributes  //返回当前元素节点的所有属性节点<br>Element.id  //返回指定元素的id属性，可读写<br>Element.tagName  //返回指定元素的大写标签名<br>Element.innerHTML   //返回该元素包含的HTML代码，可读写<br>Element.outerHTML  //返回指定元素节点的所有HTML代码，包括它自身和包含的的所有子元素，可读写<br>Element.className  //返回当前元素的class属性，可读写<br>Element.classList  //返回当前元素节点的所有class集合<br>Element.dataset   //返回元素节点中所有的data-*属性。<br>（2）尺寸属性</p>
+<p>Element.clientHeight   //返回元素节点可见部分的高度<br>Element.clientWidth   //返回元素节点可见部分的宽度<br>Element.clientLeft   //返回元素节点左边框的宽度<br>Element.clientTop   //返回元素节点顶部边框的宽度<br>Element.scrollHeight  //返回元素节点的总高度<br>Element.scrollWidth  //返回元素节点的总宽度<br>Element.scrollLeft   //返回元素节点的水平滚动条向右滚动的像素数值,通过设置这个属性可以改变元素的滚动位置<br>Element.scrollTop   //返回元素节点的垂直滚动向下滚动的像素数值<br>Element.offsetHeight   //返回元素的垂直高度(包含border,padding)<br>Element.offsetWidth    //返回元素的水平宽度(包含border,padding)<br>Element.offsetLeft    //返回当前元素左上角相对于Element.offsetParent节点的垂直偏移<br>Element.offsetTop   //返回水平位移<br>Element.style  //返回元素节点的行内样式<br>（3）节点相关属性</p>
+<p>Element.children   //包括当前元素节点的所有子元素<br>Element.childElementCount   //返回当前元素节点包含的子HTML元素节点的个数<br>Element.firstElementChild  //返回当前节点的第一个Element子节点<br>Element.lastElementChild   //返回当前节点的最后一个Element子节点<br>Element.nextElementSibling  //返回当前元素节点的下一个兄弟HTML元素节点<br>Element.previousElementSibling  //返回当前元素节点的前一个兄弟HTML节点<br>Element.offsetParent   //返回当前元素节点的最靠近的、并且CSS的position属性不等于static的父元素。<br>1.4.2 Element节点的方法</p>
+<p>（1）位置方法</p>
+<p>getBoundingClientRect()<br>// getBoundingClientRect返回一个对象，包含top,left,right,bottom,width,height // width、height 元素自身宽高<br>// top 元素上外边界距窗口最上面的距离<br>// right 元素右外边界距窗口最上面的距离<br>// bottom 元素下外边界距窗口最上面的距离<br>// left 元素左外边界距窗口最上面的距离<br>// width 元素自身宽(包含border,padding)<br>// height 元素自身高(包含border,padding) </p>
+<p>getClientRects()   //返回当前元素在页面上形参的所有矩形。</p>
+<p>// 元素在页面上的偏移量<br>var rect = el.getBoundingClientRect()<br>return {<br>  top: rect.top + document.body.scrollTop,<br>  left: rect.left + document.body.scrollLeft<br>}<br>（2）属性方法</p>
+<p>Element.getAttribute()：读取指定属性<br>Element.setAttribute()：设置指定属性<br>Element.hasAttribute()：返回一个布尔值，表示当前元素节点是否有指定的属性<br>Element.removeAttribute()：移除指定属性<br>（3）查找方法</p>
+<p>Element.querySelector()<br>Element.querySelectorAll()<br>Element.getElementsByTagName()<br>Element.getElementsByClassName()<br>（4）事件方法</p>
+<p>Element.addEventListener()：添加事件的回调函数<br>Element.removeEventListener()：移除事件监听函数<br>Element.dispatchEvent()：触发事件</p>
+<p>//ie8<br>Element.attachEvent(oneventName,listener)<br>Element.detachEvent(oneventName,listener)</p>
+<p>// event对象<br>var event = window.event||event;    </p>
+<p>// 事件的目标节点<br>var target = event.target || event.srcElement;</p>
+<p>// 事件代理<br>ul.addEventListener(‘click’, function(event) {<br>  if (event.target.tagName.toLowerCase() === ‘li’) {<br>    console.log(event.target.innerHTML)<br>  }<br>});<br>（5）其他</p>
+<p>Element.scrollIntoView()   //滚动当前元素，进入浏览器的可见区域</p>
+<p>//解析HTML字符串，然后将生成的节点插入DOM树的指定位置。<br>Element.insertAdjacentHTML(where, htmlString);<br>Element.insertAdjacentHTML(‘beforeBegin’, htmlString); // 在该元素前插入<br>Element.insertAdjacentHTML(‘afterBegin’, htmlString); // 在该元素第一个子元素前插入<br>Element.insertAdjacentHTML(‘beforeEnd’, htmlString); // 在该元素最后一个子元素后面插入<br>Element.insertAdjacentHTML(‘afterEnd’, htmlString); // 在该元素后插入</p>
+<p>Element.remove()  //用于将当前元素节点从DOM中移除<br>Element.focus()   //用于将当前页面的焦点，转移到指定元素上<br>二、CSS操作</p>
+<p>（1）类名操作</p>
+<p>//ie8以下<br>Element.className  //获取元素节点的类名<br>Element.className += ‘ ‘ + newClassName  //新增一个类名</p>
+<p>//判断是否有某个类名<br>function hasClass(element,className){<br>  return new RegExp(className,’gi’).test(element.className);<br>}</p>
+<p>//移除class<br>function removeClass(element,className){<br>  element.className = element.className.replace(new RegExp(‘(^|\b)’ + className.split(‘ ‘).join(‘|’) + ‘(\b|$)’, ‘gi’),’’);<br>}</p>
+<p>//ie10<br>element.classList.add(className)  //新增<br>element.classList.remove(className)  //删除<br>element.classList.contains(className)  //是否包含<br>element.classList.toggle(className)  //toggle class<br>（2）style操作</p>
+<p>element.setAttribute(‘style’,’’)</p>
+<p>element.style.backgroundColor = ‘red’</p>
+<p>element.style.cssText //用来读写或删除整个style属性</p>
+<p>element.style.setProperty(propertyName,value)  //设置css属性<br>element.style.getPropertyValue(property)  //获取css属性<br>element.style.removeProperty(property)  //删除css属性<br>操作非内联样式<br>//ie8<br>element.currentStyle[attrName]<br>//ie9+<br>window.getComputedStyle(el,null)[attrName]<br>window.getComputedStyle(el,null).getPropertyValue(attrName)<br>//伪类<br>window.getComputedStyle(el,’:after’)[attrName]<br>三、对象</p>
+<p>3.1 Object对象</p>
+<p>（1）生成实例对象</p>
+<p>var o = new Object()<br>（2）属性</p>
+<p>Object.prototype   //返回原型对象<br>（3）方法</p>
+<p>Object.keys(o)   //遍历对象的可枚举属性<br>Object.getOwnPropertyName(o)   //遍历对象不可枚举的属性<br>对象实例的方法</p>
+<p>valueOf()：返回当前对象对应的值。<br>toString()：返回当前对象对应的字符串形式。<br>toLocaleString()：返回当前对象对应的本地字符串形式。<br>hasOwnProperty()：判断某个属性是否为当前对象自身的属性，还是继承自原型对象的属性。<br>isPrototypeOf()：判断当前对象是否为另一个对象的原型。<br>propertyIsEnumerable()：判断某个属性是否可枚举。<br>3.2 Array对象</p>
+<p>（1）生成实例对象</p>
+<p>var a = new Array()<br>（2）属性</p>
+<p>a.length  //长度<br>（3）Array.isArray()</p>
+<p>Array.isArray(a)   //用来判断一个值是否为数组<br>（4）Array实例的方法</p>
+<p>a.valueof()   //返回数组本身<br>a.toString()  //返回数组的字符串形式<br>a.push(value,vlaue….)   //用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。<br>pop()   //用于删除数组的最后一个元素，并返回该元素<br>join()  //以参数作为分隔符，将所有数组成员组成一个字符串返回。如果不提供参数，默认用逗号分隔。<br>concat()  //用于多个数组的合并。它将新数组的成员，添加到原数组的尾部，然后返回一个新数组，原数组不变。<br>shift()  //用于删除数组的第一个元素，并返回该元素。<br>unshift(value)  //用于在数组的第一个位置添加元素，并返回添加新元素后的数组长度。<br>reverse()   //用于颠倒数组中元素的顺序，返回改变后的数组<br>slice(start_index, upto_index);   //用于提取原数组的一部分，返回一个新数组，原数组不变。第一个参数为起始位置（从0开始），第二个参数为终止位置（但该位置的元素本身不包括在内）。如果省略第二个参数，则一直返回到原数组的最后一个成员。负数表示倒数第几个。<br>splice(index, count_to_remove, addElement1, addElement2, …);   //用于删除原数组的一部分成员，并可以在被删除的位置添加入新的数组成员，返回值是被删除的元素。第一个参数是删除的起始位置，第二个参数是被删除的元素个数。如果后面还有更多的参数，则表示这些就是要被插入数组的新元素。<br>sort()   //对数组成员进行排序，默认是按照字典顺序排序。排序后，原数组将被改变。如果想让sort方法按照自定义方式排序，可以传入一个函数作为参数，表示按照自定义方法进行排序。该函数本身又接受两个参数，表示进行比较的两个元素。如果返回值大于0，表示第一个元素排在第二个元素后面；其他情况下，都是第一个元素排在第二个元素前面。<br>map()   //对数组的所有成员依次调用一个函数，根据函数结果返回一个新数组。<br>map(elem,index,arr)   //map方法接受一个函数作为参数。该函数调用时，map方法会将其传入三个参数，分别是当前成员、当前位置和数组本身。<br>forEach()   //遍历数组的所有成员，执行某种操作,参数是一个函数。它接受三个参数，分别是当前位置的值、当前位置的编号和整个数组。<br>filter()   //参数是一个函数，所有数组成员依次执行该函数，返回结果为true的成员组成一个新数组返回。该方法不会改变原数组。<br>some()    //用来判断数组成员是否符合某种条件。接受一个函数作为参数，所有数组成员依次执行该函数，返回一个布尔值。该函数接受三个参数，依次是当前位置的成员、当前位置的序号和整个数组。只要有一个数组成员的返回值是true，则整个some方法的返回值就是true，否则false。<br>every()   //用来判断数组成员是否符合某种条件。接受一个函数作为参数，所有数组成员依次执行该函数，返回一个布尔值。该函数接受三个参数，依次是当前位置的成员、当前位置的序号和整个数组。所有数组成员的返回值都是true，才返回true，否则false。<br>reduce()   //依次处理数组的每个成员，最终累计为一个值。从左到右处理（从第一个成员到最后一个成员）<br>reduceRight()  //依次处理数组的每个成员，最终累计为一个值。从右到左（从最后一个成员到第一个成员）<br>indexOf(s)   //返回给定元素在数组中第一次出现的位置，如果没有出现则返回-1。可以接受第二个参数，表示搜索的开始位置<br>lastIndexOf()  //返回给定元素在数组中最后一次出现的位置，如果没有出现则返回-1。<br>3.3 Number对象</p>
+<p>（1）生成对象</p>
+<p>var n = new Number()<br>（2）Number对象的属性</p>
+<p>Number.POSITIVE_INFINITY：正的无限，指向Infinity。<br>Number.NEGATIVE_INFINITY：负的无限，指向-Infinity。<br>Number.NaN：表示非数值，指向NaN。<br>Number.MAX_VALUE：表示最大的正数，相应的，最小的负数为-Number.MAX_VALUE。<br>Number.MIN_VALUE：表示最小的正数（即最接近0的正数，在64位浮点数体系中为5e-324），相应的，最接近0的负数为-Number.MIN_VALUE。<br>Number.MAX_SAFE_INTEGER：表示能够精确表示的最大整数，即9007199254740991。<br>Number.MIN_SAFE_INTEGER：表示能够精确表示的最小整数，即-9007199254740991。<br>（4）Number对象实例的方法</p>
+<p>toString()   //用来将一个数值转为字符串形式.可以接受一个参数，表示输出的进制。如果省略这个参数，默认将数值先转为十进制，再输出字符串；否则，就根据参数指定的进制，将一个数字转化成某个进制的字符串。<br>toFixed()   //用于将一个数转为指定位数的小数，返回这个小数对应的字符串。<br>toExponential()  //用于将一个数转为科学计数法形式。可传入一个参数，参数表示小数点后有效数字的位数，范围为0到20，超出这个范围，会抛出一个RangeError。<br>toPrecision()  //用于将一个数转为指定位数的有效数字。<br>3.4 String 对象</p>
+<p>（1）生成实例对象</p>
+<p>var s = new String()<br>（2）String对象的属性</p>
+<p>s.length   //返回字符串的长度<br>（3）方法</p>
+<p>s.chatAt(index)   //返回指定位置的字符<br>s.fromCharCode()    //该方法的参数是一系列Unicode码点，返回对应的字符串。<br>s.charCodeAt(index)    //返回给定位置字符的Unicode码点（十进制表示）<br>s.concat(s2)  //用于连接两个字符串<br>s.slice(start,end)   //用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的结束位置（不含该位置）。如果参数是负值，表示从结尾开始倒数计算的位置，即该负值加上字符串长度。<br>s.substring(start,end)  //用于从原字符串取出子字符串并返回，不改变原字符串.第一个参数表示子字符串的开始位置，第二个位置表示结束位置。<br>s.substr(start,length)   //用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的长度。如果第一个参数是负数，表示倒数计算的字符位置。如果第二个参数是负数，将被自动转为0，因此会返回空字符串。<br>s.indexOf(s)   //返回给定元素在字符串中第一次出现的位置，如果没有出现则返回-1。可以接受第二个参数，表示搜索的开始位置<br>s.lastIndexOf()  //返回给定元素在字符串中最后一次出现的位置，如果没有出现则返回-1。<br>s.trim()  //用于去除字符串两端的空格，返回一个新字符串<br>s.toLowerCase()  //用于将一个字符串全部转为小写,返回一个新字符串，不改变原字符串。<br>s.toUpperCase()  //全部转为大写<br>s.localeCompare(s2)  //用于比较两个字符串。它返回一个整数，如果小于0，表示第一个字符串小于第二个字符串；如果等于0，表示两者相等；如果大于0，表示第一个字符串大于第二个字符串。<br>s.match(regexp)   //用于确定原字符串是否匹配某个子字符串，返回一个数组，成员为匹配的第一个字符串。如果没有找到匹配，则返回null。<br>s.search()  //返回值为匹配的第一个位置。如果没有找到匹配，则返回-1。<br>s.replace(oldValue,newValue)  //用于替换匹配的子字符串，一般情况下只替换第一个匹配（除非使用带有g修饰符的正则表达式）。<br>s.split()  //按照给定规则分割字符串，返回一个由分割出来的子字符串组成的数组。还可传入第二个参数，决定了返回数组的成员数。<br>3.5 Math对象</p>
+<p>（1）属性</p>
+<p>Math.E：常数e。<br>Math.LN2：2的自然对数。<br>Math.LN10：10的自然对数。<br>Math.LOG2E：以2为底的e的对数。<br>Math.LOG10E：以10为底的e的对数。<br>Math.PI：常数Pi。<br>Math.SQRT1_2：0.5的平方根。<br>Math.SQRT2：2的平方根。<br>（2）数学方法</p>
+<p>Math.abs()：返回参数的绝对值<br>Math.ceil()：向上取整，接受一个参数，返回大于该参数的最小整数。<br>Math.floor()：向下取整<br>Math.max(n,n1,…)：可接受多个参数，返回最大值<br>Math.min(n,n1,..)：可接受多个参数，返回最小值<br>Math.pow(n,e)：指数运算, 返回以第一个参数为底数、第二个参数为幂的指数值。<br>Math.sqrt()：返回参数值的平方根。如果参数是一个负值，则返回NaN。<br>Math.log()：返回以e为底的自然对数值。<br>Math.exp()：返回e的指数，也就是常数e的参数次方。<br>Math.round()：四舍五入<br>Math.random()：返回0到1之间的一个伪随机数，可能等于0，但是一定小于1。<br>（3）三角函数方法</p>
+<p>Math.sin()：返回参数的正弦<br>Math.cos()：返回参数的余弦<br>Math.tan()：返回参数的正切<br>Math.asin()：返回参数的反正弦（弧度值）<br>Math.acos()：返回参数的反余弦（弧度值）<br>Math.atan()：返回参数的反正切（弧度值）<br>3.6 JSON对象</p>
+<p>（1）方法</p>
+<p>JSON.stringify()<br>//用于将一个值转为字符串。该字符串应该符合JSON格式，并且可以被JSON.parse方法还原。<br>//（JSON.stringify(obj, selectedProperties)）还可以接受一个数组，作为第二个参数，指定需要转成字符串的属性。<br>//还可以接受第三个参数，用于增加返回的JSON字符串的可读性。如果是数字，表示每个属性前面添加的空格（最多不超过10个）；如果是字符串（不超过10个字符），则该字符串会添加在每行前面。</p>
+<p>JSON.parse()   //用于将JSON字符串转化成对象。<br>3.7 console对象</p>
+<p>（1）方法</p>
+<p>console.log(text,text2,…)   //用于在console窗口输出信息。它可以接受多个参数，将它们的结果连接起来输出。如果第一个参数是格式字符串（使用了格式占位符），console.log方法将依次用后面的参数替换占位符，然后再进行输出。<br>console.info()   //在console窗口输出信息，同时，会在输出信息的前面，加上一个蓝色图标。<br>console.debug()  //在console窗口输出信息，同时，会在输出信息的前面，加上一个蓝色图标。<br>console.warn()  //输出信息时，在最前面加一个黄色三角，表示警告；<br>console.error()  //输出信息时，在最前面加一个红色的叉，表示出错，同时会显示错误发生的堆栈<br>console.table()  //可以将复合类型的数据转为表格显示。<br>console.count()  //用于计数，输出它被调用了多少次。<br>console.dir()    //用来对一个对象进行检查（inspect），并以易于阅读和打印的格式显示。<br>console.dirxml()  //用于以目录树的形式，显示DOM节点。<br>console.assert()  //接受两个参数，第一个参数是表达式，第二个参数是字符串。只有当第一个参数为false，才会输出第二个参数，否则不会有任何结果。</p>
+<p>//这两个方法用于计时，可以算出一个操作所花费的准确时间。<br>console.time()<br>console.timeEnd()<br>//time方法表示计时开始，timeEnd方法表示计时结束。它们的参数是计时器的名称。调用timeEnd方法之后，console窗口会显示“计时器名称: 所耗费的时间”。</p>
+<p>console.profile()  //用来新建一个性能测试器（profile），它的参数是性能测试器的名字。<br>console.profileEnd()  //用来结束正在运行的性能测试器。</p>
+<p>console.group()<br>console.groupend()<br>//上面这两个方法用于将显示的信息分组。它只在输出大量信息时有用，分在一组的信息，可以用鼠标折叠/展开。<br>console.groupCollapsed()  //用于将显示的信息分组，该组的内容，在第一次显示时是收起的（collapsed），而不是展开的。</p>
+<p>console.trace()  //显示当前执行的代码在堆栈中的调用路径。<br>console.clear()  //用于清除当前控制台的所有输出，将光标回置到第一行。</p>
+<p>今天看到的这篇文章,记录下来,以后实在忘记了,可以查阅..</p>
+<p><a href="https://www.kancloud.cn/dennis/tgjavascript/241852" target="_blank" rel="external">我看到的原文地址.</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;常用API合集&lt;/p&gt;
+&lt;p&gt;一、节点&lt;/p&gt;
+&lt;p&gt;1.1 节点属性&lt;/p&gt;
+&lt;p&gt;Node.nodeName   //返回节点名称，只读&lt;br&gt;Node.nodeType   //返回节点类型的常数值，只读&lt;br&gt;Node.nodeValue  //返回Text或Com
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="aip" scheme="http://yoursite.com/tags/aip/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重新安装hexo博客的坑</title>
+    <link href="http://yoursite.com/2017/03/05/%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9D%91/"/>
+    <id>http://yoursite.com/2017/03/05/重新安装hexo博客的坑/</id>
+    <published>2017-03-05T08:50:11.000Z</published>
+    <updated>2017-03-06T10:09:06.974Z</updated>
+    
+    <content type="html"><![CDATA[<p>终于搞好了.几天前怪我手贱.想玩玩nodejs的版本管理工具,nvm.然后在我的电脑下(windows7 64位).把原来的node删除,安装了nvm管理node.结果..不知道为什么的,node的npm包安装不了.然后..就没有然后了, 接着连node都用不了了.在google下的很多方法都不能用后,于是我只好重装系统.</p>
+<p>接着 hexo 搭建的博客也更新不了了.. 弄了半天 google了好久,终于搞定了.</p>
+<p>不说多了,怕下次还会重装系统出现这样的问题,导致浪费时间.特此记录一下.</p>
+<p>首先,以前没玩过hexo搭建博客的.可以参考一下下面两个博客,我是按照这两个博客弄的.但是技术日新月异,最好直接参照hexo官网,搭建..</p>
+<p><a href="http://www.cylong.com/blog/2016/04/19/hexo-git/" target="_blank" rel="external">博客一</a></p>
+<p><a href="http://hifor.net/2015/07/01/%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo-github/" target="_blank" rel="external">博客二</a></p>
+<p>下面这个才是真正的正文..</p>
+<p>重装系统后,如果还想继续玩hexo搭建的博客.<br>1.首先把原来的没重装系统前的博客的文件夹,直接复制里面的内容到你想要安装的新目录文件夹中.<br>2._config.yml，theme/，source/，scaffolds/，package.json，.gitignore，是需要拷贝的留下来的.<br>3..git/，node_modules/，public/，.deploy_git/，db.json文件需要删除。<br>4.然后,删除好了以后, 用命令npm install 自动安装package.json的文件.<br>5.输入下面这两个命令,获取你的用户名和邮箱(可以以后直接不要每次部署的时候每次都输入自己的名字了!)  </p>
+<pre><code>git config --global user.name &quot;YOUR NAME&quot;
+git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
+</code></pre><p>其中，YOUR NAME 是自己取的名字，YOUR EMAIL ADDRESS 是自己的 Github 邮箱。</p>
+<p>6.关键的一点是,因为重装系统了,就没有git公钥了,所以要打开git bash<br>输入命令</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;  //后面换成你的github邮箱
+</code></pre><p>然后一路按回车,完成后打开c盘.搜索 id_rsa.pub 这个文件,找到后,用随便哪个编辑器打开他.复制里面的内容,<br>接着,我们去github官网登录账号后,<br>登陆GitHub，打开「Settings」-&gt;「SSH and GPG keys」，然后点击「new SSH key」，填上任意Title，在Key文本框里粘贴公钥id_rsa.pub文件的内容（千万不要粘贴成私钥了！），最后点击「Add SSH Key」，你就应该看到已经添加的Key。<br>7.这回也是很重要的一点是:为了能用 hexo d 这个命令部署到github上面,需要安装</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>这回就大功告成了! 这回,重装系统或者换电脑了,也可以继续使用hexo更新博客了!</p>
+<p>关于安装好hexo后,使用的一些命令:<br>新建md文件:</p>
+<pre><code>hexo new &apos;my-first-blog&apos; #创建一个md文件
+</code></pre><p>启动服务器,查看本地效果</p>
+<pre><code>hexo s //默认开在4000 端口 http://localhost:4000
+</code></pre><p>上传到github的命令组,</p>
+<pre><code>hexo clean  # 清除之前 public 文件夹的内容
+</code></pre><p>生成静态的 public 文件夹，部署时候也是直接拷贝此文件夹里的文件。</p>
+<pre><code>hexo g
+</code></pre><p>部署到 Github 上，按照提示输入自己 Github 的用户名和密码。</p>
+<pre><code>hexo d 
+</code></pre><p>当然上面的 hexo g 和hexo d 命令可以合并成:</p>
+<pre><code>hexo d --g #或者 hexo g --d
+</code></pre><p>主要参考文献:<br><a href="https://www.zhihu.com/question/21193762" target="_blank" rel="external">知乎大神–skycrown 在答案的大概中间位置,android开发</a><br><a href="http://lowrank.science/Hexo-Migration/" target="_blank" rel="external">多机更新 Hexo 博客</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;终于搞好了.几天前怪我手贱.想玩玩nodejs的版本管理工具,nvm.然后在我的电脑下(windows7 64位).把原来的node删除,安装了nvm管理node.结果..不知道为什么的,node的npm包安装不了.然后..就没有然后了, 接着连node都用不了了.在goo
+    
+    </summary>
+    
+    
+      <category term="node" scheme="http://yoursite.com/tags/node/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs学习之旅</title>
+    <link href="http://yoursite.com/2017/02/13/nodejs%E5%AD%A6%E4%B9%A0%E4%B9%8B%E6%97%85/"/>
+    <id>http://yoursite.com/2017/02/13/nodejs学习之旅/</id>
+    <published>2017-02-12T16:25:53.000Z</published>
+    <updated>2017-04-17T09:13:25.732Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.不需要重启就能看到更改node代码的效果(supervisor)</p>
+<p>在使用node开发的时候,会因为频繁更改代码而导致node程序都要每次的手动重启,才能看到效果(因为node是直接获取内存的东西,不像php是直接重新加载.).使用supervisor 可以解决这个问题.</p>
+<pre><code>npm install -g supervisor
+</code></pre><p>运行</p>
+<pre><code>supervisor --harmony app.js
+</code></pre><p>2.关于node 的 -dev和没有-dev的区别</p>
+<p>–save-dev 是你开发时候依赖的东西(测试环境下)，–save 是你发布之后还依赖的东西(上线时还需要的依赖)。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.不需要重启就能看到更改node代码的效果(supervisor)&lt;/p&gt;
+&lt;p&gt;在使用node开发的时候,会因为频繁更改代码而导致node程序都要每次的手动重启,才能看到效果(因为node是直接获取内存的东西,不像php是直接重新加载.).使用supervisor 可以
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="http://yoursite.com/tags/%E8%B8%A9%E5%9D%91/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="node" scheme="http://yoursite.com/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http请求的套路</title>
+    <link href="http://yoursite.com/2017/02/06/http%E8%AF%B7%E6%B1%82%E7%9A%84%E5%A5%97%E8%B7%AF/"/>
+    <id>http://yoursite.com/2017/02/06/http请求的套路/</id>
+    <published>2017-02-06T12:26:23.000Z</published>
+    <updated>2017-03-06T13:06:45.614Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为搞互联网的,是该知道一些http的请求了,现整理一些:</p>
+<h2>http请求</h2>
+
+<p>1.用户打开浏览器,输入url地址后,浏览器搜索自身的DNS缓存,如果搜不到或者DNS实效的情况下.</p>
+<p>2.搜索操作系统自身的DNS缓存,如果找到还是找不到的话.</p>
+<p>3.浏览器读取本地的host文件.如果还是没有的话</p>
+<p>4.浏览器会发起一个DNS的一个系统调用<br>(1)发起DNS调用后,宽带运营商的服务器查看本身的缓存,还是没有的情况下.<br>(2)浏览器会层层的往上查找,找到后,运营商服务器把结果返回给系统的内核,然后操作系统读取到了以后,操作系统返回给浏览器.  最终浏览器拿到了这个网站和对应的IP地址.</p>
+<p>5.浏览器获得对应的域名IP地址后,发起HTTP “三次握手”,<br>三次握手:<br>(1)客户端向服务器端确认请求有没有错误.<br>(2)服务器端回应,一切OK<br>(3)客户端接到回应,继续和服务器说,”那就开始吧” 类似的话</p>
+<p>6.TCP/IP连接搞起来了,浏览器向服务器端发出HTTP请求.使用的方法比如 GET ,post 等等方法.</p>
+<p>7.服务器接到请求,根据路径参数,经过后端代码的一些处理后,把结果返回.比如请求的是网站的index页面,就返回给这个页面的html代码.</p>
+<p>8.浏览器拿到这些代码,开始解析和渲染出来页面.(当然,这次只是请求html代码,还有css样式的代码,和js代码,图片等资源.如果要请求的话,就继续重复上面的步骤)</p>
+<p>9.所有的源文件经过上面的步骤拿到后,经过浏览器的解析,就呈现出完整的页面给用户使用了.</p>
+<p>所以怪不得,要尽量减少css样式表和js的请求,能合并的尽量合并,图片也是,能变成雪碧图的也尽量变成雪碧图.因为上面的请求感觉太复杂了,浪费时间和资源..</p>
+<h2>HTTP的请求方法.</h2> 
+
+<p>GET方法:读取,获取<br>POST方法: 提交数据<br>delete:删除(请求服务器删除某个文件)<br>PUT:更新(向指定资源上传新的内容)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为搞互联网的,是该知道一些http的请求了,现整理一些:&lt;/p&gt;
+&lt;h2&gt;http请求&lt;/h2&gt;
+
+&lt;p&gt;1.用户打开浏览器,输入url地址后,浏览器搜索自身的DNS缓存,如果搜不到或者DNS实效的情况下.&lt;/p&gt;
+&lt;p&gt;2.搜索操作系统自身的DNS缓存,如果找到还是找不
+    
+    </summary>
+    
+    
+      <category term="http" scheme="http://yoursite.com/tags/http/"/>
+    
+      <category term="网络请求" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开发微信公众号遇见的坑</title>
+    <link href="http://yoursite.com/2017/01/18/%E5%BC%80%E5%8F%91%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E9%81%87%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    <id>http://yoursite.com/2017/01/18/开发微信公众号遇见的坑/</id>
+    <published>2017-01-18T14:20:11.000Z</published>
+    <updated>2017-03-06T10:07:48.895Z</updated>
+    
+    <content type="html"><![CDATA[<p>我的天,我的记性实在是太烂了,我以前的弄过的微信公众号都忘记的差不多了,今天想来重新弄一下,结果..</p>
+<p>俗话说:”好记性不如烂笔头..”</p>
+<p>不说了,直接进入正题.</p>
+<p>这次我还是开发订阅号(准备开始弄小程序了,来回忆回忆..)<br>1.肯定申请微信公众号的啦,然后正式的微信公众号在腾讯7个工作日内审批下来.如果实在没有公众号,可以申请一个测试的公众号,用于实验什么的..</p>
+<p>2.开发的时候,在自己的电脑上写的代码,是没办法暴露在外网上的,意思就是这段代码只能在自己的局域网上跑.然后就需要一个内网暴露的软件,什么花生壳什么的都可以,但是我记得我以前用的是ngrok这个软件,这个软件是外国的. 然后我这次用的时候,发现用不了了?! 然后我google了半天,原来是升级了,<a href="https://natapp.cn" target="_blank" rel="external">升级后的网址是这个:natapp.cn</a>,然后下载他的那个新的软件natapp.exe,然后按照<a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="external">natapp.exe的使用教程</a>来弄就OK了(申请账号的时候,可以用免费的套餐,但是免费的套餐有时候会自动更改那个外网的地址,所以开发的时候要经常去微信的后台去换地址,烦..).成功了.但是在开这个natapp.exe之前先,自己在自己的电脑上开一个端口80的.用什么阿帕奇服务器都行,以前我是用阿帕奇,现在get到了个,用python开web服务器,一行代码搞定..</p>
+<p>现在贴代码..</p>
+<pre><code>python -m SimpleHTTPServer 80  # python2
+py -3 -m http.server 80  # python3
+</code></pre><p>我又发现一个,在nodejs下运行,开端口的..<br>先下载这个包 </p>
+<pre><code>npm install http-server -g //下载这个文件包
+</code></pre><p>然后就可以在站点的目录下输入</p>
+<pre><code>http-server //默认开80端口 和python一样的效果.
+</code></pre><p>更改端口,可以输入</p>
+<pre><code>http-server -p 端口号  //可以更改任意端口,但是不要被占用了.
+</code></pre><p>简单吧..(这是测试natapp有没有在运行.)</p>
+<p>(我发现一个问题,就是用python开端口的时候,就算是在局域网里的另一台机器都访问,如果端口下的文件夹是视频什么的比较大的文件,python会自动断开这个端口.但是是网页什么的,就没问题.用nodejs开端口,可以任意使用.原因暂时不明..)</p>
+<p>然后开完一个web服务器后就可以用natapp.exe,这个natapp的默认端口是80,所以开80端口的才有用(貌似微信的公众号的后台调试也是只支持80端口的..)</p>
+<p>这里有个小插曲,就是关于nodejs的,我这次用的后台是nodejs,然后node有两种版本,因为历史的原因,0.几版本的(公司做的稳定版)还有一个是4.几的(个人做的,以前叫io.js,这个分支的第一个数是偶数的版本,稳定,奇数是测试版本),然后我记得我以前玩node的时候,有些库是不能在其他版本用的,然后我就想到python可以两个版本同时装在一台电脑上,node应该也是可以的吧.所以我就又跳进坑了,琢磨了好久,发现有个有个叫nvm的东西,可以管理node版本(厉害!).然后我就想玩了一下,<a href="http://dajyaretakuya.blog.51cto.com/2823475/1760255/" target="_blank" rel="external">贴上一个大神的博客</a>,我想说:那个windows版的nvm好难下载,速度好慢,下载失败了好多次.. 但是最后还是被我弄下来了..<br>这篇博文是关于node的npm的使用命令.其实就是说,你要使用什么版本的node就用nvm来切换过来使用npm</p>
+<pre><code>nvm use 0 #切换至 0.12.7 版本 然后才调用npm安装库
+npm install -g mz-fis #安装 mz-fis 模块至全局目录，安装完成的路径是 /Users/&lt;你的用户名&gt;/.nvm/versions/node/v0.12.7/lib/mz-fis
+nvm use 4 #切换至 4.2.2 版本
+npm install -g react-native-cli #安装 react-native-cli 模块至全局目录，安装完成的路径是 /Users/&lt;你的用户名&gt;/.nvm/versions/node/v4.2.2/lib/react-native-cli
+</code></pre><p>查看此电脑的node版本数和名称</p>
+<pre><code>nvm ls
+</code></pre><p>查看服务器中看安装的node版本</p>
+<pre><code>nvm ls available
+</code></pre><p>切换此电脑中的node版本</p>
+<pre><code>nvm use 版本号
+</code></pre><p>3.接入和配置公众号</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我的天,我的记性实在是太烂了,我以前的弄过的微信公众号都忘记的差不多了,今天想来重新弄一下,结果..&lt;/p&gt;
+&lt;p&gt;俗话说:”好记性不如烂笔头..”&lt;/p&gt;
+&lt;p&gt;不说了,直接进入正题.&lt;/p&gt;
+&lt;p&gt;这次我还是开发订阅号(准备开始弄小程序了,来回忆回忆..)&lt;br&gt;1.肯
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="微信" scheme="http://yoursite.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用nodejs管理工具nvm遇见的坑</title>
+    <link href="http://yoursite.com/2017/01/18/%E7%94%A8nodejs%E7%9A%84%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7nvm%E9%81%87%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    <id>http://yoursite.com/2017/01/18/用nodejs的管理工具nvm遇见的坑/</id>
+    <published>2017-01-18T14:20:11.000Z</published>
+    <updated>2017-03-06T09:36:57.196Z</updated>
+    
+    <content type="html"><![CDATA[<p>用nvm管理的几个nodejs版本,其中只有第一个下载的node版本的npm能使用,剩下的都不能使用!<br>我很纳闷,因为这样的话,除了能使用的那个node,剩下的根本都不能npm,那这个nodejs版本还有什么用.我越想越觉得不对,肯定是什么地方出错了,才会导致这样的结果..</p>
+<p>踩坑之旅开始了</p>
+<p>事情是这样的,因为项目不同,有时候要用的node版本也不同.然后我百度知道了一个nodejs的管理工具叫nvm,<a href="http://dajyaretakuya.blog.51cto.com/2823475/1760255/" target="_blank" rel="external">贴上一个大神的博客.</a><br>我用的是windows版本的nvm.版本号是1.1.1</p>
+<p>然后一个巨大的坑出现了,我第一次用这个nvm. 刚刚开始安装的很顺利,就是下载nvm有点难下载,速度很慢. 然后安装基本无压力,nvm会自动的帮你把环境变量配置好,当然,也可以自己配置,因为有时候想要它的文件地址掌控在自己的手中.<br>环境变量配置:</p>
+<pre><code>NVM_HOME = C:\nvm  //新建这两个变量
+NVM_SYMLINK = C:\nodejs 
+Path = %NVM_HOME%;%NVM_SYMLINK%  //这个是直接配置在系统的path里面的.
+</code></pre><p>弄好nvm后,通过命令下载nodejs</p>
+<pre><code>nvm install 版本号
+</code></pre><p>然后我下载的第一个node一切正常,npm什么的正常使用.<br>但是当我的下载的第二个第三个node的时候,发现npm根本不能使用.</p>
+<p>发现这个问题后,我百度,google了很久,看了许多博文,发现他们的方法不太适合我这个问题.我也配置了无数遍的环境变量,结果还是不行.基本上方法都用了一遍,这个问题就是不能解决.</p>
+<p>到了后面,我看到一篇博文的<a href="http://blog.csdn.net/stopcpp/article/details/53909558" target="_blank" rel="external">关于npm安装和环境变量的配置</a>给了我点启发,他把npm的包,放到了他新建的nvm文件夹里.<br>我就在想,npm包的事,结果我发现,除了第一个安装的node里面的node_modules是有npm这个文件,剩下的都是空的,我想,这个应该就是问题的所在了吧.<br>然后我试了试,把第一个成功的node版本的node_modules文件夹里的npm文直接复制到另一个版本的node_modules文件夹里面.结果奇迹出现了,切换到这个版本的node后,输入命令 npm -v 发现有输出版本号了. </p>
+<p>到此,问题解决了.</p>
+<p>但是还有更坑的是什么,我还是不甘心,又试了一下nvm,我把一些不能用npm的node直接从文件夹中删除.然后又重新通过命令 nvm install 版本号 下载这个node版本, 发现这个node的npm有了! </p>
+<p>对,你没听错, 有了!</p>
+<p>我只想说,兄弟,不带这么玩的吧..</p>
+<p>对了,还有个情况就是,npm下载东西,因为服务器在国外,速度很慢,甚至下载不成功.所以要通过国内的镜像服务器来下载, 比如 淘宝的 和 cnpm</p>
+<p>这里,还有一个叫nrm的东西,很好用,就是专门处理这个情况的.</p>
+<p>nrm的用法是:</p>
+<pre><code>npm install -g nrm //全局下载安装这个nrm 
+</code></pre><p>列出所有可以用的npm的镜像源地址</p>
+<pre><code>nrm ls //安装后可以使用这个命令
+</code></pre><p>然后,想用哪个镜像源,就用哪个,国内肯定是cnpm和淘宝(淘宝10分钟同步国外的npm库一次,cnpm15分钟同步一次)的啦.</p>
+<pre><code>nrm use cnpm //使用cnpm这个镜像源下网络载nodejs的库.提升网速度
+</code></pre><p>测试每个镜像源的链接速度</p>
+<pre><code>nrm test //测试速度,一般淘宝的最快
+</code></pre><p>好啦,这个工具我感觉挺好用的,特别是下载库的时候速度太慢,可以切换镜像源,用这个nrm最方便.连地址你都可以不用百度了,直接用nrm帮你换地址就成了.</p>
+<p>记得,一定要加 -g 全局安装 nrm 让其他版本的nodejs都能用,所以记得,我觉得不仅仅是nrm要全局安装,其实如果用这个nvm管理多个node的话,其他的node也要用库,全局安装就不用这么麻烦,每个都要下载一遍,直接全局安装就行.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用nvm管理的几个nodejs版本,其中只有第一个下载的node版本的npm能使用,剩下的都不能使用!&lt;br&gt;我很纳闷,因为这样的话,除了能使用的那个node,剩下的根本都不能npm,那这个nodejs版本还有什么用.我越想越觉得不对,肯定是什么地方出错了,才会导致这样的结
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+      <category term="nvm" scheme="http://yoursite.com/tags/nvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python的库win32的引入失败问题</title>
+    <link href="http://yoursite.com/2017/01/13/python%E7%9A%84%E5%BA%93win32%E7%9A%84%E5%BC%95%E5%85%A5%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/01/13/python的库win32的引入失败问题/</id>
+    <published>2017-01-13T08:43:33.000Z</published>
+    <updated>2017-01-13T08:53:12.717Z</updated>
+    
+    <content type="html"><![CDATA[<p>呜,心累.为了用这个win32库.</p>
+<p>我用这个库,出现了一些问题.</p>
+<p>1.这个库是.exe文件的形式,要安装对号入座的版本,比如你电脑的python是64位 2.7版本的.那这个win32也是要安装64位2.7版本的,我试了好多次,现在这个阶段不能用pip安装win32.</p>
+<p>2.安装完成,版本正确,但是也是不能调用,特别在pyCharm这个编辑器上一直报错,找不到这个文件.</p>
+<p>解决方法是: 是用 .pth 文件来实现。Python 在遍历已知的库文件目录过程中，如果见到一个 .pth 文件，就会将文件中所记录的路径加入到 sys.path 设置中，这样 .pth 文件说指明的库也就可以被 Python 运行环境找到。<br>找到Python安装目录下的site-packages文件夹（$Python/Lib/site-packages）。</p>
+<p>在该目录下创建一个PATH文件（*.pth），例如 MyModule.pth，打开新创建的文件，将你Python源文件所在的目录写入文件中。</p>
+<p>比如我的saySomething.py文件的目录是E:/PythonSpace，PATH文件名为MyModule.pth。所以我的MyModule.pth的文件内容为：E:/PythonSpace。</p>
+<p>除此之外，在高级设置中添加环境变量python/Lib/site-packages之后，重启下pycharm就可以在pycharm中 import win32api 了。</p>
+<p>这些方法来自网络,各个博主的方法.我在把其中的方法提炼出来.在这里要谢谢各位博主帮忙.</p>
+<p>(我用的是建一个.pth文件弄好的,现在pyCharm对于win32库没报错了.)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;呜,心累.为了用这个win32库.&lt;/p&gt;
+&lt;p&gt;我用这个库,出现了一些问题.&lt;/p&gt;
+&lt;p&gt;1.这个库是.exe文件的形式,要安装对号入座的版本,比如你电脑的python是64位 2.7版本的.那这个win32也是要安装64位2.7版本的,我试了好多次,现在这个阶段不能用
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重新安装python遇见的坑</title>
+    <link href="http://yoursite.com/2017/01/13/%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85python%E9%81%87%E8%A7%81%E7%9A%84%E5%9D%91/"/>
+    <id>http://yoursite.com/2017/01/13/重新安装python遇见的坑/</id>
+    <published>2017-01-13T05:01:58.000Z</published>
+    <updated>2017-02-22T08:46:08.914Z</updated>
+    
+    <content type="html"><![CDATA[<p>唉,我今天想要写一个python脚本,这个脚本需要调用Windows系统的aip.需要用到一个库,就是pywin32.<br>然后,踩坑之旅就这样开始了..</p>
+<p>我在下载这个pywin32的时候,发现我那时候下载的python2.7版本是32位操作系统的..我的天.那时候我真的是什么都不懂,乱下载.然后我是新手中的新手,根本用不出来32位和64位的有什么差别.<br>但是这次我要调用系统aip.为了防止以后会有更多的坑,我毅然决然的选择重新安装python2.7版本.</p>
+<p>然后我这次安装的是python2.7.12版本的.结果发现pip不能使用.而且是解决一个坑,又出现第二个坑,就是连环坑等着我去跳.下面我一个一个的说说,防止我以后如果还要重新安装python的时候,又忘记了.</p>
+<p>1.用pip下载库的时候,报错:一段英文,大致意思是,pip的版本过低,比如是8.0.1版本的,他让你升级到9.0.0版本.<br>解决方法是:去到python27的安装目录里,找到这个scripts文件夹,然后shift+右键打开窗口命令.输入指令: easy_install.exe pip==9.0.0(错误提示你升级到哪个版本,你就升级到哪个版本.)</p>
+<p>2.pip下载库,继续报错,如果出现的错误提示英文中有 “error: Microsoft Visual C++ 10.0 is required (Unable to find vcvarsall.bat).” 之类的,而且还给了你一个网站,叫你去那边下载这个缺少的 c++库,你就去下载然后安装就可以了.网站(<a href="https://www.microsoft.com/en-us/download/details.aspx?id=44266" target="_blank" rel="external">https://www.microsoft.com/en-us/download/details.aspx?id=44266</a>)</p>
+<p>3.对了,还有一个我认为也是比较重要的,还是记录一下吧. 在下载python然后安装的时候,对话框如图有这个选项的时候,记得一定要勾选上.pip和Add python.exe to Path ,勾第二个的意思是: 这样就可以不用手动去弄python的环境变量之类的了.<br><img src="http://www.liaoxuefeng.com/files/attachments/0014222393965540081463bf8a9499094bdda24b6fdf2d6000" alt="python安装对话框"></p>
+<hr>
+<p>2017.2.22 更新</p>
+<p>4.我都无语了,今天不注意用360把我电脑上的python2.7删除了,我的电脑有两个版本,3的和2的版本,删除了一个..哭死..<br>然后我下载继续安装,结果怎么都安装不了, 然后我看到对话框的提示,是说<img src="https://pic3.zhimg.com/1f664204b90d921e725dc2cd3ff878e2_b.jpg" alt="提示框"></p>
+<p>说什么有一个东西不能安装,之类的.然后我百度了一下,说的是这样的结果.<br><a href="https://www.zhihu.com/question/30733889" target="_blank" rel="external">知乎的大神说的,安装时选择for me，不是for all users ，（我也没选择安装pip），我的已经成功安装。</a>反正就是安装的第一个选项选择for me ,然后不选择安装pip就行了.<br>但是这样还是出了个问题,就是安装好的python2.7没有pip可以用,这个时候我又去百度了一下,结果有很多,然后我想起了之前第二条要更新pip的事,我就想着用 easy_install来安装pip就好了..结果..<br>不安装pip的下,连easy_install都没有,所以要先下载easy_install先.<br><a href="https://pypi.python.org/pypi/ez_setup" target="_blank" rel="external">下载easy_install的地址</a><br>然后下载 ez_setup.py 到桌面后，按住键盘的 shift 键，右击鼠标，选中“在此处打开命令窗口”，进入 DOS 界面，输入命令：python ez_setup.py 就行了,easy_install安装好后,结合我上次写的第二条就可以安装pip了.(记住,pip最好安装最新版的,要不然python又提示你安装最新的pip了..<a href="https://pypi.python.org/pypi/pip" target="_blank" rel="external">查看最新的pip版本</a>)<br>想来想去,还是在贴一个大神的博文,安装pip的另一种方法吧,以备不时之需.. 这些坑踩到我都怕了,想想看是要换Mac了.. <a href="http://blog.csdn.net/xsj_blog/article/details/52037609" target="_blank" rel="external">http://blog.csdn.net/xsj_blog/article/details/52037609</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;唉,我今天想要写一个python脚本,这个脚本需要调用Windows系统的aip.需要用到一个库,就是pywin32.&lt;br&gt;然后,踩坑之旅就这样开始了..&lt;/p&gt;
+&lt;p&gt;我在下载这个pywin32的时候,发现我那时候下载的python2.7版本是32位操作系统的..我的天
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于时间管理的方法(get)</title>
+    <link href="http://yoursite.com/2017/01/02/%E5%85%B3%E4%BA%8E%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%E7%9A%84%E6%96%B9%E6%B3%95-get/"/>
+    <id>http://yoursite.com/2017/01/02/关于时间管理的方法-get/</id>
+    <published>2017-01-02T02:40:13.000Z</published>
+    <updated>2017-01-05T16:37:46.959Z</updated>
+    
+    <content type="html"><![CDATA[<p>这两天,看到万维钢最近写了篇文章.介绍了数学家研究关于时间管理的相关成果.</p>
+<p>得出了两个消息.一个坏消息,一个好消息.</p>
+<p>坏消息:并不存在适用所有情况的最好的时间管理方法.</p>
+<p>好消息:如果给这些方法增加一些使用条件,就是设定一些条件,那么可以用数学证明,找到适合这类情况的最好的时间管理方法.</p>
+<p>先来说说，如果你面临的是这样的情况，你有几个任务，所有的任务都是急事，也就是说，每个任务都有完成截止日期，那么数学家的建议是什么呢？</p>
+<p>第一个办法就是按照截止日期的早晚来安排任务，先做最早截止的任务，做完一个再做下一个。这样做可能每个任务都会拖延一点，但是都不会拖得太久。</p>
+<p>不过，按照这种做法，有的任务还是会完不成，但是我们希望按时完成的任务越多越好，那怎么办呢？这时候就要采取另一种方法，叫“摩尔算法”，就是放弃占用时间最长的任务。</p>
+<p>举个例子，冰箱里有很多水果，都有自己的保质期，为了尽可能地减少浪费，你应该先吃最早过期的那个。当你发现自己肯定吃不完的时候，就应该把剩下的水果中最大的那个扔掉，因为吃掉它最费时间。也就是说，不管西瓜还有几天过期，你都应该把西瓜扔了，继续按照到期的先后顺序来吃剩下的水果。</p>
+<p>再来说说，如果你面临的是这样的情况，你手头有一些任务，每一个任务的截止日期都比较宽裕，都不是急事，那么哪种方法最好？</p>
+<p>处理不是急事，你可以用“小事优先”方法，就是优先做那些时间更短的事。</p>
+<p>一项任务涉及到别人的等待时间，可以用这个方法。举个例子，有两个人都要跟你谈话，一个要谈3分钟，一个要谈10分钟。如果先跟3分钟的人谈，另外一个人就要等3分钟，那么占用的总时间是3+3+10=16分钟。如果先跟10分钟的人谈，另一个人要等10分钟，占用的总时间是10+10+3=23分钟。所以先跟3分钟的人谈话更省时间。</p>
+<p>如果没有人在等，我们也应该小事优先，因为心里一直被任务压着，每完成一个小任务，就能减轻一点心理负担。</p>
+<p>以上说了两种情况，适用的范围其实不多，因为你经常面临的是这样的情况，你手头有一些任务，虽然截止日期比较宽裕，但是每件事的重要程度并不一样。这个时候用什么方法最好呢？</p>
+<p>数学家说，此时的原则是“任务密度高者优先”。就是说，要计算每一个任务的密度，按照密度从高到低的顺序去做。如何计算任务密度呢？就是任务的重要程度，除以完成时间。</p>
+<p>那么如何确定任务的重要程度呢？</p>
+<p>这里没有统一的作法，但是重要的是理解，这里的关键在于这个量化的思想。不能光说要事优先，到底多重要的事才算要事呢？这个方法就是把事情的重要程度用数字表现出来，帮助你判断。</p>
+<p>作者也举了一个例子，说明可以简单地估算任务的重要程度，就是估算每一个任务完成后的收入。这样就可以方便地计算任务密度了。</p>
+<p>比如有两项任务，A任务收入200元，1小时完成；B任务收入300元，3小时完成。用任务的收入除以完成时间，A任务的密度是200，B任务的密度是100。所以，虽然B任务收入更多，也要排在A任务的后边。</p>
+<p>说到这里，你可能会问，那些不能折算成收入的任务怎么办，怎么去估算这些任务的密度呢？你可以用自己的标准去给每一个任务设定一个值，让这些任务的重要性可以比较就可以。记住，关键在于这个量化的思想，把任务的重要性可以用数值的方式表示出来。</p>
+<p>最后，我们来说一个最复杂的情况，就是你要同时考虑的方面很多，比如，既要考虑不同任务的截止日期，每个任务的重要程度也不同，而且，任务之间可能还是有联系的，必须完成A任务，才能继续做B任务。这种情况怎么办？数学家说，这种情况没有一个最优解。</p>
+<p>但是数学家说，只要改一个小条件，就会有一个好办法，这个小条件是可以允许任务中断的。</p>
+<p>举个例子，就是你正在做一件事的时候，来了新的任务。此时，你应该继续做原来的任务呢，还是去做新的任务呢？这个问题是有解决办法的。你可以比较一下新任务和手里任务的截止时间，哪个先截止就做哪个。你还可以比较一下新任务和手里任务的密度，哪个密度更高就先做哪个。</p>
+<p>最后总结一下，数学家说，时间管理没有一个放之四海而皆准的好办法。但是，如果设定一些条件，也就是说，如果可以简化到某一种情况，数学家就能告诉你这种情况下的最好办法。</p>
+<p>所以，最重要的，是你要知道，每一种时间管理的方法其实都是有适用条件的。</p>
+<blockquote>
+<p>看完这篇文章,我记得我以前做事效率非常的差,不知道把西瓜丢掉. 硬的头皮去啃完西瓜,结果是什么?西瓜虽然啃完了,但是其他的也吃不到了..(做不完了..)</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这两天,看到万维钢最近写了篇文章.介绍了数学家研究关于时间管理的相关成果.&lt;/p&gt;
+&lt;p&gt;得出了两个消息.一个坏消息,一个好消息.&lt;/p&gt;
+&lt;p&gt;坏消息:并不存在适用所有情况的最好的时间管理方法.&lt;/p&gt;
+&lt;p&gt;好消息:如果给这些方法增加一些使用条件,就是设定一些条件,那么
+    
+    </summary>
+    
+    
+      <category term="新知" scheme="http://yoursite.com/tags/%E6%96%B0%E7%9F%A5/"/>
+    
+      <category term="get" scheme="http://yoursite.com/tags/get/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>葡萄酒(酒杯的学问)</title>
+    <link href="http://yoursite.com/2016/12/31/%E5%A6%82%E4%BD%95%E5%93%81%E8%91%A1%E8%90%84%E9%85%922/"/>
+    <id>http://yoursite.com/2016/12/31/如何品葡萄酒2/</id>
+    <published>2016-12-31T11:43:29.000Z</published>
+    <updated>2017-01-11T12:58:35.344Z</updated>
+    
+    <content type="html"><![CDATA[<p>上次说到,葡萄酒的酒瓶的不同,里面装的酒也是不一样的.基本上看瓶子可以猜里面的酒的种类.</p>
+<p>为了在即将到来的新年宴会上装逼,我有收集了一些关于葡萄酒的知识,这里主要讲的是–酒杯..</p>
+<p>喝葡萄酒都用高脚杯,这已经是常识了.但是其实高脚杯也有很大的不同,记得在电影或者电视剧里面,经常看到大伙在庆功宴上,开香槟庆祝,然后香槟倒在一摞叠起来的高脚杯上的场景吗? 这里的高脚杯就和我们平时用的高脚杯样子又有很大的不同.(大家可以回想回想那种杯子的样子.这里我卖个关子)</p>
+<p>高脚杯有大小和形状之分.</p>
+<p>如果和红酒,正常情况会使用那种比较常见的高脚杯,就是杯的 肚子 比较大,上面稍微收口的酒杯.因为样子像郁金香的花苞,所以又称大郁金香型.<br><img src="http://hiphotos.baidu.com/exp/pic/item/a992e31f4134970a74f8774594cad1c8a6865d95.jpg" alt="郁金香型高脚杯"></p>
+<p>喝红酒,一般要等到它的味道蒸出来,一边闻,一边喝.因此,酒杯的容积要大,然后杯口要收缩一点,因为为了帮助酒挥发,我们手要不断的转动北京,杯口略小,就是为了不要转动的时候酒流出来.<br>喝酒的时候,一般先给主人倒上,然后主人小口尝试一下,得到主人的认可后,才会给每一个人倒上.</p>
+<p>红酒一般每次倒上4-6盎司,大约120-180毫升,占杯子容积的一小半.喝的时候要小口慢慢喝,不要一下子就”干了”.好的[葡萄酒在杯子上会出现挂杯的现象,而且挂杯的痕迹是油状的,比较厚实.差的酒留下的是水状的.</p>
+<p>还有一点,喝红酒要配红肉,就是猪肉牛肉羊肉,因为红肉油脂丰富,而红酒则是酸性的,里面有醋酸,然后醋酸和红酒配合会发生化学反应,生成乙酸乙酯.这个乙酸乙酯的香味就是我们天然美食的香味.</p>
+<p>和白葡萄酒.一般用容积小的杯子,杯子的形状如图.<br><img src="http://hiphotos.baidu.com/exp/pic/item/ca5257540923dd546608c102d009b3de9c824825.jpg" alt="白葡萄酒杯">  </p>
+<p>为什么要用小杯和白葡萄酒呢? 因为白葡萄酒一般需要低温饮用.一般在0到10度之间的温度. 所以如果杯子大,一般没喝完就温度上去了.味道就差了很多.和白葡萄酒不要晃杯子.和红酒不太一样.</p>
+<p>喝白葡萄酒要配白肉,就是什么鱼肉海鲜鸡肉之类的,为什么呢?<br>因为白肉大都比较鲜.白葡萄酒刚好可以用清醇的味道,点缀一下白肉的鲜.</p>
+<p>接下来,是香槟,前面我说到了电影里面的情节,庆祝的时候喜欢用香槟,把香槟酒倒在摞好的酒杯上,从上往下倒.这种杯子的口比较大,是为了让气泡冒出来,增加庆祝的气氛.<br><img src="http://h.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=def892e09c82d158bb825eb7b8317ee5/f603918fa0ec08fa5ecc07a959ee3d6d54fbdaeb.jpg" alt="大口的香槟杯"></p>
+<p>还有一种香槟杯子,是一种非常细长的,开口很小的杯子.这种杯子这样设计的目的就是为了不让香槟酒的气泡这么快的消失,可以一边喝一边体会,这种杯子一版在用正餐时使用.<br><img src="http://hiphotos.baidu.com/exp/pic/item/5202e5f2b2119313433299da64380cd791238d2c.jpg" alt="小口香槟杯"></p>
+<p>好啦,酒杯我就先记录到这里.下次有要补充的再继续补充.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上次说到,葡萄酒的酒瓶的不同,里面装的酒也是不一样的.基本上看瓶子可以猜里面的酒的种类.&lt;/p&gt;
+&lt;p&gt;为了在即将到来的新年宴会上装逼,我有收集了一些关于葡萄酒的知识,这里主要讲的是–酒杯..&lt;/p&gt;
+&lt;p&gt;喝葡萄酒都用高脚杯,这已经是常识了.但是其实高脚杯也有很大的不同,
+    
+    </summary>
+    
+    
+      <category term="新知" scheme="http://yoursite.com/tags/%E6%96%B0%E7%9F%A5/"/>
+    
+      <category term="美酒" scheme="http://yoursite.com/tags/%E7%BE%8E%E9%85%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么叫牛人?</title>
+    <link href="http://yoursite.com/2016/12/24/%E4%BB%80%E4%B9%88%E5%8F%AB%E7%89%9B%E4%BA%BA/"/>
+    <id>http://yoursite.com/2016/12/24/什么叫牛人/</id>
+    <published>2016-12-24T14:57:58.000Z</published>
+    <updated>2016-12-24T15:13:21.532Z</updated>
+    
+    <content type="html"><![CDATA[<p>什么叫牛人?</p>
+<p>1.自己定义目标,并且想办法勇于善于把它完成(能不能自己定义问题,并想办法解决掉).  (扎里伯格)</p>
+<p>2.在行动的过程中,让更多的人能够帮助你. (能和其他人交流的界面和方法.)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;什么叫牛人?&lt;/p&gt;
+&lt;p&gt;1.自己定义目标,并且想办法勇于善于把它完成(能不能自己定义问题,并想办法解决掉).  (扎里伯格)&lt;/p&gt;
+&lt;p&gt;2.在行动的过程中,让更多的人能够帮助你. (能和其他人交流的界面和方法.)&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="新知" scheme="http://yoursite.com/tags/%E6%96%B0%E7%9F%A5/"/>
+    
+      <category term="定义" scheme="http://yoursite.com/tags/%E5%AE%9A%E4%B9%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于以色列建国的感悟</title>
+    <link href="http://yoursite.com/2016/12/24/%E5%85%B3%E4%BA%8E%E4%BB%A5%E8%89%B2%E5%88%97%E5%BB%BA%E5%9B%BD%E7%9A%84%E6%84%9F%E6%82%9F/"/>
+    <id>http://yoursite.com/2016/12/24/关于以色列建国的感悟/</id>
+    <published>2016-12-23T16:04:23.000Z</published>
+    <updated>2016-12-24T03:53:55.842Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前学历史的时候,我记得在二战的时候,中国政府在上海收留和帮助了很多的犹太人,然后战争结束犹太人很感激,据说后来中国的歼十战机师承以色列的幼狮战机,有很多幼狮战机的技术在里面.</p>
+<p>另一头我又听历史老师讲,以色列和巴勒斯坦一直在打仗,那个地方很不和平,以色列犹太人说这个地方以前是他们的,巴勒斯坦也说我们祖祖辈辈都生活在这里,这个地方是我们的.</p>
+<p>然后,印象中好像中东地区一直都是阿拉伯人的,祖祖辈辈都生活在那里.<br>顿时,一个可怕的”担忧”,浮现在我脑海,如果那个时候,二战中国政府收留的犹太人,过后说上海是他们的怎么办?</p>
+<p>但是转念一想,犹太人其实挺好的,最少他们懂得感恩,在西方世界关于这些武器等技术限制对华出口,但是犹太人还是帮了我们. 所以我知道,我刚刚的担忧是有点杞人忧天的了.</p>
+<p>但是,怎么想都感觉不太对,关于这些,有些东西感觉在我脑袋里扣不成一条完整的绳子.比如,为什么巴勒斯坦和以色列都说这个地方是他们的?这个地方沙漠一片片的,以色列人还花了这么多钱和精力去治理这些沙漠,而且犹太人也是一个很会经商的民族,周围这么多和他们犹太人不和的民族在旁边,这个再怎么算,都是赔本的买卖,以色列人不会不知道,但是他们为什么还当宝,还要坚守在这?</p>
+<p>然后这段时间,了解了一下这段关于犹太人的历史,不了解不知道,一了解吓一跳,让我更加佩服!</p>
+<p>犹太人说这块地方原来是他们的,确实是,公元135年之前,他们一直在这里生活,然后古罗马的皇帝哈德良,把犹太人赶走,还规定,犹太人永远不能回来或者接近这里,接近就是死刑,而且还给这片地方改名,叫做巴勒斯坦,据说这是犹太人死敌非利士人的拉丁文中的同音.就是在拉丁文中非利士人和巴勒斯坦是同音.<br>而且在这公元135年之前,被赶走了两次,犹太人都又跑回来复国了,只是这次时间久了点,从被赶走到现在复国隔了近两千年.</p>
+<p>隔了进两千年,还能复国!?  这什么概念?</p>
+<p>而且犹太人在我的印象中是非常牛的一个民族,别的不说太多,光爱因斯坦是犹太人,都可以证明他们的牛.但是这个民族也是一个很惨的民族,二战被德国差点灭族不说,其实我看到有关资料,他们在公元135年被赶出自己的地盘来,就命运非常的惨,去到欧洲各国,都是被压迫,被压榨.我还记得,犹太人惨到什么地步,在中央电视台看过一档节目说的是二战的时候,德国纳粹迫害犹太人后,把他们的人皮,做成台灯和书皮.惨到这样的地步..</p>
+<p>而且还有一个阻力,他们想复国的地方,有一座城市,耶路撒冷,是三大教的圣城,犹太人离开的这段时间.两大教已经打的不可开交了,现在一个被欺负了千年的民族想回来这个地方建国?不仅在当时,到现在也是感觉是一件不可思议的事.<br>而且居然还真给犹太人做到了..真是厉害!</p>
+<p>不过我感觉我前面说了好多的废话,好吧,那直接进入正题,以色列建国的感悟,要说到感悟,要得先了解犹太人是怎么建国的,才能会有感悟.</p>
+<p>据资料记载,最先提出犹太人建国主义理论的是一个叫 摩西’赫斯,据说这个人还是共产主义的先驱比马克思,恩格斯还要先.但是这个人对关于犹太人复国只是提出一个理论,真正实施的是一个叫赫茨尔的犹太人,他是个很有执行力,马上就去做了.<br>赫茨尔先找到当时犹太人中富可敌国的而且又很有民族感的犹太人,找了其中两位,但是,那两位都觉得这些都不太可能实现,首先当时的巴勒斯坦在奥斯曼土耳其帝国的手里,那可是一个主权国家,当时犹太人只是有钱,但是没有军队,怎么和奥斯曼拿这片地方?其次,就算奥斯曼同意分巴勒斯坦给犹太人的话,要建立一个国家,也是需要很多钱的,虽然犹太人有一部分确实很有钱,但是对于建立一个国家来讲,那些钱几乎微不足道.为什么,就像当时赫茨尔像富豪提出的建国预算大概是十亿马克!这是什么概念,在当时的经济情况下,第二次提出六千万美金,依然还是拿不出来.<br>到了这里,赫茨尔知道,找富豪是不太可能完成这项任务的了,他直接跑去和当时的列强英国说,英国也很为难,说巴勒斯坦不在英国人的手里,怎么帮他们?要不找其他的地方?然后赫茨尔想了想,确实也是,这个道理,然后提出了,什么塞浦路斯,西奈半岛,乌干达,甚至当时的日本侵略我们东北,还说干脆划分哈尔滨附近的一片地方给犹太人建国算了(这样也想的出来..)然后,犹太人专门开了一个会议,专门讨论复国的事,当把这些提议去乌干达的建国的想法提出来时(当时他和英国人讨论了好久,干脆去乌干达算了.),遭到了大会的极高票反对,甚至说派一个考察团去乌干达看看也是高票反对不通过.大会上的犹太人说,要复国就去老祖宗留下来的巴勒斯坦那里复国. 这下英国人说,帮不了他们了巴勒斯坦又不在他们的管辖下,给他们出了这么多方案又没人通过.英国人说不管了.没办法,赫茨尔因此去找了德国人,德国人当时刚刚上台的皇帝叫威廉二世.威廉二世本来是答应了,为犹太人出头,然后他上台的第二年就出访奥斯曼土耳其,结果看到奥斯曼这个国家也不错,为什么要和他们交恶?接下来,在奥斯曼土耳其访问中,做了很多友好的动作.赫茨尔一看完蛋了.德国这边也没希望了.赫茨尔这一代犹太人的希望基本没了,因为该找该求的人都求遍了,有钱,有势的都不帮忙.最后赫茨尔死于1904年,这可以分为犹太人复国的第一阶段的结束.</p>
+<p>第二阶段的犹太人复国,交到了一个名字叫魏茨曼的犹太人的手中.为什么交给他,因为他是一名化学高手,当时正在打仗,第一次世界大战,火药是战争的必需品,然后当时火药的生产需要一个叫丙酮的东西,可是在魏茨曼之前,生产丙酮的工艺很差,然后魏茨曼发明了一种方法可以快速大量安全有效的生产丙酮,这就帮了英国的大忙,因为在打仗.然后可以说是,魏茨曼和英国人做交换,我把这些技术给你们,你们支持我们犹太人去复国.然后英国人说,没问题,紧接着以私人信件的形式发表了,一个叫’贝尔福宣言’.表达了在不损害当地人的利益的情况下,支持犹太人去那里建国.<br>虽然是私人信件的形式发表的,但是也终于有一个国际大国愿意支持犹太人复国了.<br>大家可能会想,一个小小的丙酮这么厉害,可以和别人换来一个国家..<br>其实,也根本不太可能嘛,别人怎么可能会因为这么一个配方给你一个国家来交换?毕竟复国这是非常大的事.<br>在网上看到,有评论说是因为,当时奥斯曼土耳其加入了德国的阵营在第一次世界大战中,然后英国是对德国宣战的,所以属于敌对国,既然是这样,英国人帮犹太人支持他们去这个奥斯曼土耳其的地方建国,当然是随便的事,因为这个不是他们的地方,而是敌对国的地方,你随便去.<br>但是也是巧合吧,历史总是会这样,一战奥斯曼土耳其战败,结果巴勒斯坦给英国人暂管.犹太人因为有之前的’贝尔福宣言’,看到了希望,开始大批大批的移民来到巴勒斯坦,然后,在当地的阿拉伯人很看不惯犹太人,因为犹太人聪明而且有钱,很快阿拉伯人就和他们闹矛盾.搞得英国焦头烂额,后悔死了,放犹太人过来,然后犹太人,又恨英国人放的犹太人不够多,又和英国搞破坏.<br>然后,这时的英国已经里外不是人了,因为犹太人恨他,阿拉伯人也讨厌英国人为什么放这些犹太人过来这里. 这时候的犹太人,还没说成功的复国了.以色列真正成立是在二战结束的时候,成立.</p>
+<p>那么为什么,到了二战以色列就能成立了呢?</p>
+<p>这是因为当时,二战的时候,美国在一战发了战争财,成为一个新崛起的大国,苏联也是另一个大国,不是英国一家说的算了.所有,犹太人建国,还得让这两大国支持才行.</p>
+<p>话分两头说,先说美国为什么支持犹太人复国,首先,美国的社会名流中,很多都是犹太人.这是第一点,然后还有一个事件.叫做 “圣路易斯号事件”,当时很多受德国纳粹迫害的犹太人乘坐圣路易斯号轮船要强行登陆美国,然后美国海关不给,说没合法手续,不允许,叫他们全部返航,结果没办法,这首轮船返航的途中,被德国潜艇炸沉.结果这事在美国引起了轩然大波,很多在美国的犹太人的民族情绪被点燃,然后随着杜鲁门总统上台,美国明确支持犹太人复国. </p>
+<p>然后,苏联,苏联前身是沙皇俄国,当时的俄国也是迫害犹太人比较厉害的一个国家.然后苏联建立,苏共的第一届政治局,一共24个人,其中16个是犹太人.但是后面各种原因,斯大林肃清犹太人,所以苏联又走上了反对犹太人的道路.但是打完仗了,苏联觉得中东是他们的后院,现在有他们讨厌的英国人在那里,很不舒服,一看阿拉伯人是没有实力和英国人捣乱,但是犹太人是有这个实力,这是一点,第二点,前面我写到,共产主义犹太人甚至还是先驱,有很多犹太人受过共产主义的熏陶,苏联觉得会不会犹太人自己建国了,会建立一个共产主义的国家?和他们苏联意识形态一样,或者说相近?所以在1947年苏联人发表了演说,支持犹太人建国.</p>
+<p>这时候,美国和苏联都搞定了,然后英国一看这两个大国都支持了,而且英国在这里被阿拉伯人和犹太人捣乱搞得很心烦,英国人也是不会做这样赔本的买卖.所以英国人就撤了.<br>紧接着,联合国大会通过决议,宣布巴勒斯坦分成两个国家,一个是阿拉伯人建立的国家,另一个是犹太人建立的国家–以色列.</p>
+<p>到这里,以色列建国的曲折故事,差不多就简单的交代完了.</p>
+<p>写到这里,这个故事给了我许多的感悟.</p>
+<blockquote>
+<p>1.万事还是得靠自身,看犹太人复国可以分为两个阶段,第一段,犹太人基本上是靠说服,或者请求帮助,或者是交换的方式,来获得一个国家.这怎么可能嘛? 世界上哪里有这么多的良心? 你说你很惨,受尽其他民族压迫,然后被赶走故土这么多年,想回来复国.确实是很惨,但是世界上也有其他民族也是这样惨的,为什么他们就没能复国了?<br>犹太人复国,看似好像世界各国的人民同情他们的遭遇,然后帮助他们,其实哪里是这个道理.犹太人没有这么出色,没有在苏联成立时,24个骨干成员,16个是犹太人,没有在美国社会上流这么多的犹太人,没有化学高手–魏茨曼,没有物理高手–爱因斯坦等等,这些牛人,能成功吗?犹太人虽然受尽迫害,但是他们依然顽强不息,依然能为人类的发展提供这么多的牛人和科学技术资料.他们犹太人民族虽然历尽苦难,但是从来没有被击垮.所以,不是犹太人取得了全世界人民的同情,相反,他们是取得了全世界人民的尊重.</p>
+<p>2.犹太人一直很坚定的相信他们一定能在巴勒斯坦这个地方复国,为什么?因为之前在公元135年之前他们也被赶出去,但是又回来复国,一共有两次.所以他们脑袋记忆深处一定相信,他们这次复国一定能成功.<br>这也让我想到了,我们中国,以前也很牛,唐朝,世界各地有唐人街,我也一直相信我们会复兴,再一次成为世界超级强国,我也有个愿望,我老司机一名,看到意大利是超跑故乡,而咱们中国在超跑这方面基本是0,我也想着把中国建设成一个世界一流电动超跑的故乡!我为什么相信我们能成功?因为我们之前在很多领域也是世界一流,所以我记忆深处也是有那种记忆,相信我们会做到.</p>
+<p>3.这点网上分析的,我觉得挺有道理.说的是,犹太人复国成功为什么? 其中有一点,成为他人的棋子,方可安身立命. 为什么这么说, 你看苏联本来是反对犹太人的,斯大林一生对犹太人都没什么好脸色.但是后面为什么支持? 其实可以从这个角度去说,当时英国在中东,苏联觉得很不舒服,然后只能靠犹太人去和英国捣乱,还有说不定犹太人建立的国家是共产主义的国家,说不定苏联又有了一个盟友,何乐而不为?其实美国也是,美国到现在都支持以色列.其中以色列这一独特的地缘位置,这一条特点,也是美国人支持以色列的一个原因.其实说白了,以色列如果不能主动的给大国博弈当他们的棋子,怎么能安身立命?毕竟犹太人一开始在复国这件事上可以算是一穷二白的地步..<br>我想了想,确实,拿这条道理在现实生活中,其实也一样受用,为什么这么说,其实打个不恰当的比喻,其实很多创业者就是其他人手中的棋子,对于投资人来说,你是他们赚钱的棋子,我把你这个棋子放在这个位置,这招虽然兵行险着,但是如果他搏对了这次走的棋,他的收获的利益可不是用手指头可以算的完的.在拿消费者来说,消费者也在把创业者当做棋子,为什么这么说.比如有两个类似的产品,消费者比对之后,决定用他不用你,等于把你这个棋子丢弃,保护另一个棋子.再比如拿支付宝来说,用户把支付宝当成一个棋子,当成了钱包,需要用钱的时候,才想到支付宝.其实支付宝不就等于是一个棋子了吗.话说到这里,其实反过来也一样,创业者一样把投资人和消费者当成了他们的手中的棋子.<br>慢慢想想,其实在人际关系中,不也是这样,互相把对方当成棋子.为什么?其实这是人性,这是人最原始的需求罢了.</p>
+<p>其实,关于这感悟还有一点,就是运气.如果犹太人没有赶在这一战和二战这段时间复国,在世界一篇和平.或者奥斯曼帝国很强大,和当时的英国一样,你想可能会复国成功吗? 这里面有很多的偶然因素.<br>不过,也不是这么悲观,假设当时的世界真的如我们假设是另一番景象,如果犹太人还是想着复国,一定还有另外的方法和机会等待他们,只是看他们能不能探索发现出来这些方法和机会.<br>就像易经里面说的.世界万物都是在变动的.阴和阳本身就是在运动的.那我们怎么办? 中国人有一个智慧,叫做以不变应万变.(这句话的意思,不是它字面上的意思.)其实,邓小平同志,把这句话进一步的封装了一下,叫做,摸着石头过河.  这个中国人的大智慧,实在是太好用了..</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前学历史的时候,我记得在二战的时候,中国政府在上海收留和帮助了很多的犹太人,然后战争结束犹太人很感激,据说后来中国的歼十战机师承以色列的幼狮战机,有很多幼狮战机的技术在里面.&lt;/p&gt;
+&lt;p&gt;另一头我又听历史老师讲,以色列和巴勒斯坦一直在打仗,那个地方很不和平,以色列犹太人
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="一些感悟" scheme="http://yoursite.com/tags/%E4%B8%80%E4%BA%9B%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>葡萄酒(酒瓶的奥秘)</title>
+    <link href="http://yoursite.com/2016/12/23/%E5%A6%82%E4%BD%95%E5%93%81%E8%91%A1%E8%90%84%E9%85%921/"/>
+    <id>http://yoursite.com/2016/12/23/如何品葡萄酒1/</id>
+    <published>2016-12-23T13:16:10.000Z</published>
+    <updated>2016-12-22T18:36:41.170Z</updated>
+    
+    <content type="html"><![CDATA[<p>很快,新历的2016年就要过去,农历新年也快要到来,接着估计年会,各种聚会就要来了..然后要各种喝酒,这样有点气氛.. </p>
+<p>我还是现在收集一些葡萄酒的知识吧(比较不喜欢白酒),看看聚会的时候能不能靠这些知识装一下逼.. 哈哈..</p>
+<p>葡萄酒的种类非常多,除了我们平时见到的红葡萄酒.白葡萄酒外,其实香槟.波特酒还有什么冰酒等甜点酒都是葡萄酒(其实,白兰地也是一种特殊的葡萄酒).</p>
+<p>世界各地不同地方虽然生产的葡萄酒各种各样,但是同一类的葡萄酒一般用一类形状的瓶子装,所以看到瓶子,可以知道里面装什么酒了.</p>
+<p>最常见的酒瓶是波尔多的.波尔多是法国最好的葡萄酒产区,什么拉菲.木桐等天价酒都出自这里.波尔多在红酒代表一类酒,瓶子有点像中国的酱油瓶,在法国只有这个地方产的酒能用这样的瓶子装酒.<br><img src="http://p5.yokacdn.com/pic/life/foods/2014/U404P1T1D927498F62DT20140528165947.jpg" alt="波尔多酒瓶子"></p>
+<p>在美国纳帕和西班牙等地,也生产类似波尔多酒的混酒,酒瓶上面的颈和波尔多的一样,但是为了和波尔多的酒区别,瓶子做得略微有点斜,瓶身上面略大,下面略小.<br><img src="https://cbu01.alicdn.com/img/ibank/2015/577/304/2187403775_1746802266.400x400.jpg" alt="纳帕混酒的瓶子"></p>
+<p>在法国名次仅小于波尔多的产地是勃艮(gen)第,它的瓶子是瓶颈上端呈现流线型的直身瓶子.<br><img src="http://n.sinaimg.cn/transform/20141224/awzunex8383856.jpg" alt="勃艮第酒瓶子(第一个)"></p>
+<p>法国另一大葡萄酒产区是罗纳河谷,瓶子虽然也是流线型直身的,但是比勃艮第的矮粗很多,因此不会搞混的.(上图第二个瓶子)</p>
+<p>还有.刚刚说到香槟也是一种葡萄酒.香槟在世界上只有法国香槟产区产出的发泡白葡萄酒才是允许称为香槟酒.<br>香槟酒的瓶子矮胖.瓶颈和瓶身的过渡期比较圆滑.他的最大的特点是瓶塞处,由于瓶中有气压,因此瓶塞使用铁丝拧死.所以,为什么开香槟的场面这么欢乐.就是来自这里了.</p>
+<p>还有哦,酒瓶的底部凹进去一块,是为了在酒瓶直立时能沉淀出酒渣,酒保存时间长了,会出现渣子.所以在开瓶之前要把酒瓶放一会沉淀一下渣子再倒酒.</p>
+<p>所以,一般来讲,酒瓶凹进去越深,说明酒需要陈化的时间越长,一般越是浓的,好酒才需要陈化的时间长,所以它们瓶子的凹陷就越深. 所以我们如果新手(说的是我)最简单判断好坏酒的质量的方法就是用手摸摸瓶底的凹陷.虽然有例外,但是八成酒都可以这样子判断好坏.</p>
+<p>嗯嗯嗯..(在憧憬的样子)..</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很快,新历的2016年就要过去,农历新年也快要到来,接着估计年会,各种聚会就要来了..然后要各种喝酒,这样有点气氛.. &lt;/p&gt;
+&lt;p&gt;我还是现在收集一些葡萄酒的知识吧(比较不喜欢白酒),看看聚会的时候能不能靠这些知识装一下逼.. 哈哈..&lt;/p&gt;
+&lt;p&gt;葡萄酒的种类非常多
+    
+    </summary>
+    
+    
+      <category term="新知" scheme="http://yoursite.com/tags/%E6%96%B0%E7%9F%A5/"/>
+    
+      <category term="美酒" scheme="http://yoursite.com/tags/%E7%BE%8E%E9%85%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分享,杨洋关于人工智能的讲话</title>
+    <link href="http://yoursite.com/2016/12/15/%E5%88%86%E4%BA%AB-%E6%9D%A8%E6%B4%8B%E5%85%B3%E4%BA%8E%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%AE%B2%E8%AF%9D/"/>
+    <id>http://yoursite.com/2016/12/15/分享-杨洋关于人工智能的讲话/</id>
+    <published>2016-12-15T14:32:52.000Z</published>
+    <updated>2016-12-19T14:48:39.983Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天,看到人工智能技术公司IPIN的首席执行官杨洋的关于人工智能的分享,我现在来摘下来,供日后查阅.</p>
+<p>演讲中，他一共谈到了两个内容，一是科技创新，二是人工智能。</p>
+<p>首先，杨洋认为科技创新是一门科学。为什么有的企业科技创新质量高，有的却很低？这背后是有迹可循的。他提出创新的关键在于生产高质量的点子，以及筛选这些点子的过程。</p>
+<p>产生点子的方式主要有三种，一是用户主导式创新，鼓励用户提供建议、点子。比如戴尔，专门建了一个Idea Storm网站，鼓励用户提供点子，一经采纳会给予奖励。第二种是从竞争对手那获取点子，最典型的是腾讯。第三种是利用外部资源寻找点子。</p>
+<p>杨洋还谈到了怎么筛选这些点子。第一，要考虑点子是否适合公司。第二，要战略性选取点子。从潜在能力、科学性、未来的盈利回报等各个维度，进行筛选。从而控制风险，获得最大投资回报率。</p>
+<p>在战略选点上，他建议中国科技企业要尽量避开BAT的核心业务。不然容易被巨头打死。人工智能领域也是这样，要避开BAT选择的方向。</p>
+<p>杨洋以人工智能从业者的角度，讲述了人工智能的发展情况、领域运用、以及人们对人工智能认知的误区。</p>
+<p>首先，他认为人工智能市场庞大。麦肯锡在2013年发了一份报告，列出了未来具有颠覆性的十二大技术，涵盖了移动互联网、知识工作自动化、先进机器人和自动汽车。这些都属于人工智能领域。</p>
+<p>第二，他提出人工智能其实不是一项技术，而是N多技术。举个例子，我们人类是怎么做事的呢？感知信息、认知、理解信息、分析、找出额外信息、再做决策。这是人类对于信息的处理过程，人工智能也同样如此。</p>
+<p>第三，为什么人工智能在2016年爆发了呢？杨洋认为，云计算普及、计算能力突破、互联网大数据以及深度学习技术的成熟，这四点碰撞在一起，造成了人工智能大热。</p>
+<p>第四，关于人工智能的方向。主要有三个：一是声音。声音有很多细分领域，各有各的特色。第二个方向是图像。第三个方向是对自然语言的理解，全世界没多少公司在这块取得过成功。</p>
+<p>杨洋说，让机器人理解文本是非常难的。声音、图像都可以转换成数字，但理解自然语言，就非常困难。比如说，“华为很棒”，“华为”这两个字你让机器怎么去理解呢？人工智能卡在了文本理解这块。那要怎么做呢？杨洋说，首先要给所有的文字建模，打好了基础，才能做到理解。</p>
+<p>第五点，未来人工智能领域将颠覆教育、医疗保健、法律、金融等行业。现在，这些传统行业已经开始让人工智能介入了。比如说金融业，两个机器人使用相同的算法和信息源，预计股票的涨幅。这就使原本需要5-6个小时的涨幅时间，缩短到了2-3分钟，股市原本是为了高效利用资金，如果人工智能可以在这么短的时间里，就做到对资金的高效配置和利用，那股市就没有存在的意义了。所以有学者就认为，AI可能会导致股市改革。</p>
+<p>有人认为，人工智能的一个局限在于没创意。可杨洋却说：机器人比人的创意要高很多，创意在数学上的表达是随机数。人往往因为经验，有思维定式，但是机器人是不存在这种定式的。所以机器人的创意反而比人要多得多。</p>
+<p>那么人工智能现在真正的局限在哪呢？杨洋说，逻辑是人工智能的天花板。机器人可以写新闻，但写不了动人的小说。因为机器人没有强大的逻辑，没办法写出动人的情节。人的逻辑是百分之九十几，但是现在机器人的世界纪录，英文逻辑才达到百分之七十多，中文还要更低一点。</p>
+<p>最后杨洋提到，未来几年人工智能会比较普及。各个行业要做的是，洞悉行业的各种生态链，了解哪个环节是人工智能能介入的。用互联网+的角度，去看待AI+。但要记住，它的速度一定比互联网+猛得多。</p>
+<blockquote>
+<p>以下是我的一些看法.我觉得杨洋先生说的没错,首先先说他觉得中国科技企业要避免BAT的核心业务,不然容易被巨头打死. </p>
+<p>那时候,万达联合百度想弄一个电商平台,结果倒闭了,百度撤资, 为什么?不想想阿里在电商混了这么多年,不是白混的,他的经验,足以弄死你.</p>
+<p>第二,人工智能确实不是一项技术,而是N多技术的集合.而我认为,以后,不仅仅只是科学家懂人工智能,人工智能会像现在的英语一样,成为以后人们的一项技能,在200几年的时候,我记得好像还有专门招英语好的人作为一个职位任职,现在呢?<br>我的设想,以后一名好的律师,医生,会计师等等,都要会写人工智能才能行,比如医生,他在医学领域有建树,然后会人工智能,写出的关于医学的人工智能,或许比我们不会医学的人写出的人工智能会更好用一些.人工智能在以后会像是英语一样,在各行各业都会需要,并且广泛应用.</p>
+<p>关于杨洋说的最后一点我是很认同的,它的速度一定比互联网＋猛得多,而且也快的多的多.</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天,看到人工智能技术公司IPIN的首席执行官杨洋的关于人工智能的分享,我现在来摘下来,供日后查阅.&lt;/p&gt;
+&lt;p&gt;演讲中，他一共谈到了两个内容，一是科技创新，二是人工智能。&lt;/p&gt;
+&lt;p&gt;首先，杨洋认为科技创新是一门科学。为什么有的企业科技创新质量高，有的却很低？这背后是
+    
+    </summary>
+    
+    
+      <category term="人工智能" scheme="http://yoursite.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决反复纠结3方法</title>
+    <link href="http://yoursite.com/2016/12/14/%E8%A7%A3%E5%86%B3%E5%8F%8D%E5%A4%8D%E7%BA%A0%E7%BB%933%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/12/14/解决反复纠结3方法/</id>
+    <published>2016-12-14T14:20:11.000Z</published>
+    <updated>2016-12-22T18:35:39.781Z</updated>
+    
+    <content type="html"><![CDATA[<p>纠结,我常常犯得事.有时候真的非常的纠结,不知道怎么弄.这样真的很浪费时间.而且有时候心情也被破坏了.今天,看到三个解决反复纠结的方法,我把它记下来.</p>
+<p>首先作者说,人之所以会纠结,是因为选择本身对我们就是个负担。每个人都想追求完美，还担心选错了受到损失。如果有一次选择结果没达到预期，就会觉得自己傻，应该选另外一项。这样下次做选择的时候，会更要求完美，更害怕选错，就会更纠结。这样就陷入了一个恶性循环。</p>
+<p>尤其是选项越多,我们就会因为害怕选错而干脆不选.就像之前做个的一个很经典的果酱实验.</p>
+<blockquote>
+<p>让人们品尝两组果酱，然后决定买哪一种。一组6种口味，另一组24种口味。结果，口味越多，买的人越少，在6种口味那组购买的人数，是24种口味那组的6倍。</p>
+</blockquote>
+<p>好啦,作者提供的三个解决反复纠结的方法是:</p>
+<ol>
+<li><p>把小事模式化。小事就是那些选错了也不会影响你生活的事情，比如说中午吃什么，衣服选什么颜色等等。一个人的精力有限，在小事上追求完美的话，性价比很低，最简单的处理方式就是找到一个固定的模式，然后变成自己的习惯。比如乔布斯经常穿黑色高领毛衣，高效率的人士定期去选购同一个品牌的衣服，就是模式化的处理方式。</p>
+</li>
+<li><p>遇到大事，可以做调查，或者做实验。这里说的大事是那些真正能改变你命运的选择，比如选择去哪个城市，找一份什么样的工作等。古典说，我们遇到大事的时候，第一步纠结的一般都是客观问题，它们都会有相对稳定的答案。比如哪项技术会发展得更快，什么方案更有效率等等，可以通过调查排除一些明显不靠谱的选择。</p>
+</li>
+<li><p>那些永远焦虑、但是从来不行动的人总是表现出深深的纠结。比如要创业的人，反复探讨哪个商业模式更容易上市，就是不去动手做。要学英语的人，总在纠结最适合的方法，就是没开始学。这些人在反复的纠结里，会强化一个暗示，就是只要做好了这个选择，生活就会一帆风顺，有重大改善。这样的暗示会让人更没有行动能力。生活中不存在完美的选择，尽快行动才是解决方案。</p>
+</li>
+</ol>
+<p>看完以后,我觉得很对, 特别是第三个建议,我也是经常在纠结哪个方法好,或者换一种理由(借口):哪个方法最适合我.  其实这就是心理偷懒的借口,你不去试试,你怎么知道这个方法适合你?这些都是要探索的.所以赶快行动,才是最重要的.就像作者说的. 生活中不存在完美的选择,尽快行动才是解决方案..</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;纠结,我常常犯得事.有时候真的非常的纠结,不知道怎么弄.这样真的很浪费时间.而且有时候心情也被破坏了.今天,看到三个解决反复纠结的方法,我把它记下来.&lt;/p&gt;
+&lt;p&gt;首先作者说,人之所以会纠结,是因为选择本身对我们就是个负担。每个人都想追求完美，还担心选错了受到损失。如果有
+    
+    </summary>
+    
+    
+      <category term="新知" scheme="http://yoursite.com/tags/%E6%96%B0%E7%9F%A5/"/>
+    
+      <category term="方法" scheme="http://yoursite.com/tags/%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于睡眠</title>
+    <link href="http://yoursite.com/2016/12/08/%E5%85%B3%E4%BA%8E%E7%9D%A1%E7%9C%A0/"/>
+    <id>http://yoursite.com/2016/12/08/关于睡眠/</id>
+    <published>2016-12-07T17:30:21.000Z</published>
+    <updated>2016-12-12T13:59:51.631Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天,我在回家的时候,看到一篇关于睡眠的文章, 写的是睡眠时间也是由基因控制的, 看的我,仿佛刷新了我的知识库,因为我一直认为睡眠是因为累了,就像是电池充电那样,电池没电了,需要充电,电池放电多,充电时间多,电池放电少,充电时间短..</p>
+<p>这篇文章大概意思如下, 日本研究团队从小白鼠的实验发现某段基因改变,使得小白鼠的睡眠时间长短也发生改变.</p>
+<p>研究人员先用化学试剂诱导差不多1万只小鼠，使它们发生基因突变，接着，又从这上万只小鼠中，找出睡眠时间明显比较长的那部分，培育它们的后代，看看这些爱睡觉的小鼠，是不是后代也一样爱睡觉。如果是，那就说明，这一谱系的小鼠爱睡觉，是由基因决定的。</p>
+<p>然后研究人员通过技术手段定位了”嗜睡基因”,并起名为sik3.</p>
+<p>接着,科学家们用化学手段，把变异的、爱睡觉的小鼠身体里的Sik3基因给敲除掉，结果发现小鼠的睡觉时间变短了。这就证实了，Sik3是让动物获得睡眠的基因。</p>
+<p>而且,研究人员也发现,这段基因sik3,不只小白鼠有,人也有,甚至果蝇和线虫一样有,而且都是对睡眠时间起作用的,所以,可以这么说,睡眠基因可能是生命底层设计中的一个重要环节，并不是等生物发展到高等动物阶段后才出现的。</p>
+<p>而且文章还说,睡眠在生物圈是一种非常普遍的行为，但是细想你就能体会到睡眠的重要性：睡眠往往占据生命总时长的三分之一，而且睡眠状态时，生物几乎完全没有防御能力，这么脆弱，这么容易受攻击的状态，竟然在进化中得以保留，那一定包含了一种生死攸关的功能。以至于获得这种功能的收益，远大于每天有三分之一时间，不设防的风险。</p>
+<p>是啊,其他生物我不懂,但是人只要有一整天不睡觉,到最后肯定非常累的慌,<br>但是如果在自然状态下,人类要面对野兽的时候,也没用说不睡觉的,但是睡觉又带来了极大的风险,稍微不注意,就是死亡的代价.</p>
+<p>所以,既然睡眠没有在大自然的选择下淘汰,必定有它特别重要的作用,所以,码农们,别熬夜了,我也要赶紧睡觉..</p>
+<p>我去睡觉啦,拜拜,除了给我介绍对象的事,其他的事不要打扰我..</p>
+<p>世界,晚安..</p>
+<pre><code>            .-&quot;&apos;&apos;-.  _
+          .&apos;       `( \
+        @/            &apos;)   ,--,__,-&quot;
+        /        /      \ /     /   _/
+      __|           ,   |/         /
+    .~  `\   / \ ,  |   /
+  .~      `\    `  /  _/   _/
+.~          `\  ~~`__/    /
+~             `--&apos;/
+             /   /    /    
+            /  /&apos;    /
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天,我在回家的时候,看到一篇关于睡眠的文章, 写的是睡眠时间也是由基因控制的, 看的我,仿佛刷新了我的知识库,因为我一直认为睡眠是因为累了,就像是电池充电那样,电池没电了,需要充电,电池放电多,充电时间多,电池放电少,充电时间短..&lt;/p&gt;
+&lt;p&gt;这篇文章大概意思如下, 
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+</feed>
